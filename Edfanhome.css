@@ -780,14 +780,14 @@ nav a:hover {
     margin: 0 auto 90px;
 }
 
-.facilities > p,
-.facilities > h3 {
+.facilities>p,
+.facilities>h3 {
     text-align: center;
     margin: 0 auto;
     font-family: 'poppins', sans-serif;
 }
 
-.facilities > p {
+.facilities>p {
     margin-bottom: 10px;
     color: rgb(192, 25, 25);
     font-size: 13px;
@@ -796,7 +796,7 @@ nav a:hover {
     text-transform: uppercase;
 }
 
-.facilities > h3 {
+.facilities>h3 {
     margin-bottom: 28px;
     font-size: clamp(28px, 4vw, 40px);
     line-height: 1.2;
@@ -1010,6 +1010,7 @@ nav a:hover {
 }
 
 @media (max-width: 760px) {
+
     .teacher-grid,
     .testimonial-grid,
     .admissions {
