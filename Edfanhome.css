@@ -601,10 +601,13 @@ nav a:hover {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 180ms ease, transform 180ms ease;
+     transform: translateY(3px);
+    background-color: #36a9d6;
+    box-shadow: 0 0 10px rgba(54, 169, 214, 0.8), 0 0 24px rgba(54, 169, 214, 0.55);
 }
 
 .about-story-button:hover {
-    background-color: #36a9d6;
+    background-color: #0481b3;
     transform: translateY(-2px);
 }
 
@@ -680,7 +683,7 @@ nav a:hover {
 }
 
 .line-divider {
-    border-bottom: #353535 3px solid;
+    box-shadow: 1px 6px 3px 1px #39aff350;
 }
 
 .parents {
@@ -1039,6 +1042,12 @@ footer {
     color: #cfcfcf;
 }
 
+
+
+.footer-links p, .footer-contact p:first-child{
+    font-weight: 600;
+}
+
 .footer-links ul li {
     margin-bottom: 8px;
     color: #cfcfcf;
@@ -1065,23 +1074,24 @@ footer a {
 
 footer a:hover,
 footer a:focus-visible {
-    color: #8fd3a3;
+    color: #50a8f0;
     text-decoration: underline;
-    text-decoration-color: #8fd3a3;
+    text-decoration-color: #3299ee;
     text-underline-offset: 3px;
+    transform: translateX(3px);
 }
 
 .footer-links li:hover::before,
 .footer-links li:focus-within::before {
     color: #8fd3a3;
-    transform: translateX(2px);
+    transform: translateX(3px);
 }
 
 .copyright {
     grid-column: 1 / -1;
     margin: 0;
     padding-top: 16px;
-    border-top: 0.5px solid #6d6d6d;
+    border-top: 0.5px solid #6d6d6d4f;
     text-align: center;
     color: #cfcfcf;
 }
@@ -1157,7 +1167,7 @@ footer a:focus-visible {
 }
 
 .academics-story-button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     background-color: #36a9d6;
     box-shadow: 0 0 14px rgba(54, 169, 214, 0.8), 0 0 28px rgba(54, 169, 214, 0.55);
 }
@@ -1381,8 +1391,8 @@ footer a:focus-visible {
 #hero-start,
 #hero-discover {
     margin: 22px 6px 0;
-    padding: 14px 24px;
-    font-size: 16px;
+    padding: 12.6px 21.6px;
+    font-size: 14.4px;
 }
 
 @media (max-width: 1000px) {
@@ -1511,8 +1521,8 @@ footer a:focus-visible {
         display: block;
         width: min(100%, 280px);
         margin: 12px auto 0;
-        padding: 13px 18px;
-        font-size: 15px;
+        padding: 11.7px 16.2px;
+        font-size: 13.5px;
     }
 
     .slide-btn {
@@ -1585,13 +1595,13 @@ footer a:focus-visible {
 
     #hero-start {
         margin: 0 8px 0 100px;
-        padding: 20px 30px;
-        font-size: 18px;
+        padding: 18px 27px;
+        font-size: 16.2px;
     }
 
     #hero-discover {
         margin: 0 100px 0 0;
-        padding: 20px 30px;
-        font-size: 18px;
+        padding: 18px 27px;
+        font-size: 16.2px;
     }
 }
