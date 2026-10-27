@@ -1,6 +1,8 @@
 const slides = document.querySelectorAll('.slide');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
+const navToggle = document.querySelector('.nav-toggle');
+const primaryNavigation = document.querySelector('#primary-navigation');
 let current = 0;
 let timer;
 
@@ -24,6 +26,23 @@ prevBtn.addEventListener('click', () => {
     showSlide(current - 1);
     startTimer();
 });
+
+if (navToggle && primaryNavigation) {
+    navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navToggle.setAttribute('aria-label', isExpanded ? 'Open navigation menu' : 'Close navigation menu');
+        primaryNavigation.classList.toggle('is-open', !isExpanded);
+    });
+
+    primaryNavigation.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Open navigation menu');
+            primaryNavigation.classList.remove('is-open');
+        });
+    });
+}
 
 // Show the first slide and start the automatic timer
 slides[0].classList.add('active');
