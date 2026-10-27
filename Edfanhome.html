@@ -14,17 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="homepage">
     <header>
         <div class="info-header">
             <p class="email-header">&#9993; edfan_college@yahoo.co.uk</p>
             <p class="phone-header">&#9742; +234-805-300-8092</p>
-            <button id="apply-button">Apply Now</button>
+            <button id="apply-button" type="button" data-target="#admission">Apply Now</button>
         </div>
     </header>
     <div class="sticky-nav">
-        <a href="#homepage"><img class="sticky-image" src="Edfan new logo.jpg" alt="Edfan College Logo"></a>
-        <a class="nav-logo" href="#homepage">
+        <a href="#home"><img class="sticky-image" src="Edfan new logo.jpg" alt="Edfan College Logo"></a>
+        <a class="nav-logo" href="#home">
             <h2 class="sticky-h2">Edfan College</h2>
         </a>
         <nav>
@@ -40,7 +40,7 @@
         </nav>
     </div>
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="slide slide1"></div>
             <div class="slide slide2"></div>
             <div class="slide slide3"></div>
@@ -66,7 +66,7 @@
 
 
 
-        <section class="feature-showcase">
+        <section class="feature-showcase" id="about">
             <div class="feature-cards">
                 <article class="feature-card">
                     <div class="card-image">
@@ -75,7 +75,7 @@
                     <div class="card-body1">
                         <h3 class="title-blue">Small classes</h3>
                         <p>Around 18 students per class, so every child gets attention.</p>
-                        <a href="#" class="learn-more btn-blue">Learn More <span>→</span></a>
+                        <a href="#about" class="learn-more btn-blue">Learn More <span>→</span></a>
                     </div>
                 </article>
 
@@ -86,7 +86,7 @@
                     <div class="card-body2">
                         <h3 class="title-red">Modern labs</h3>
                         <p>Physics, Chemistry, Biology and ICT labs for hands-on learning.</p>
-                        <a href="#" class="learn-more btn-red">Learn More <span>→</span></a>
+                        <a href="#academics" class="learn-more btn-red">Learn More <span>→</span></a>
                     </div>
                 </article>
 
@@ -97,7 +97,7 @@
                     <div class="card-body3">
                         <h3 class="title-orange">Strong results</h3>
                         <p>Consistently excellent WAEC, NECO and BECE outcomes.</p>
-                        <a href="#" class="learn-more btn-orange">Learn More <span>→</span></a>
+                        <a href="#admission" class="learn-more btn-orange">Learn More <span>→</span></a>
                     </div>
                 </article>
             </div>
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </section>
-        <article class="academics">
+        <article class="academics" id="academics">
             <p>Academics</p>
             <h3>A curriculum built for today, and for what comes next.</h3>
             <p>In Junior School (JS1–JS3), students explore 15 subject areas from Mathematics and Sciences to French, Yoruba, ICT and Art. In Senior School (SS1–SS3), after career consultation, they choose from Sciences, Humanities, Business, Technology and the Arts, working towards WAEC and NECO.</p>
@@ -175,129 +175,135 @@
             <button class="academics-story-button" type="button">Explore</button>
             <img src="ICT lab.jpg" alt="Edfan students learning together in a science laboratory">
         </article>
-        <section>
+        <section class="facilities" id="facilities">
             <p>Our Facilities</p>
             <h3>Modern spaces where talent finds room to grow.</h3>
-            <div>
-                <img src="" alt="Science lab pic">
-                <h4>Science laboratories</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="Ict labs pic">
-                <h4>ICT labs</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="Music room pic">
-                <h4>Music room</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="Library-pic">
-                <h4>Well-stocked library</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="Clinic pic">
-                <h4>On-site clinic</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="Spacious classrooms pic">
-                <h4>Spacious classrooms</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="administrative office">
-                <h4>Administrative offices</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="security pic">
-                <h4>Security and Acess infrastructure</h4>
-                <button>Learn More</button>
-            </div>
-            <div>
-                <img src="" alt="food&Nut. pic">
-                <h4>Food and Nutrition</h4>
-                <button>Learn More</button>
+            <div class="facility-grid">
+                <div class="facility-item">
+                    <img src="labs.jpg" alt="Science lab pic">
+                    <h4>Science laboratories</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="ICT lab.jpg" alt="Ict labs pic">
+                    <h4>ICT labs</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="hero.jpg" alt="Music room pic">
+                    <h4>Music room</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="classroom.jpg" alt="Library-pic">
+                    <h4>Well-stocked library</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="classroom.jpg" alt="Clinic pic">
+                    <h4>On-site clinic</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="classroom.jpg" alt="Spacious classrooms pic">
+                    <h4>Spacious classrooms</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="classroom.jpg" alt="administrative office">
+                    <h4>Administrative offices</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="classroom.jpg" alt="security pic">
+                    <h4>Security and access infrastructure</h4>
+                    <button type="button">Learn More</button>
+                </div>
+                <div class="facility-item">
+                    <img src="classroom.jpg" alt="food and nutrition pic">
+                    <h4>Food and Nutrition</h4>
+                    <button type="button">Learn More</button>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="teachers" id="staff-directory">
             <h2>Our Teachers</h2>
-            <div>
-                <p>Teacher's name 1</p>
-                <p>Subject</p>
+            <div class="teacher-grid">
+                <div class="teacher-card">
+                    <p>Teacher's name 1</p>
+                    <p>Subject</p>
+                </div>
+                <div class="teacher-card">
+                    <p>Teacher's name 2</p>
+                    <p>Subject</p>
+                </div>
+                <div class="teacher-card">
+                    <p>Teacher's name 3</p>
+                    <p>Subject</p>
+                </div>
             </div>
-            <div>
-                <p>Teacher's name 2</p>
-                <p>Subject</p>
-            </div>
-            <div>
-                <p>Teacher's name 3</p>
-                <p>Subject</p>
-            </div>
-            <button>View All Teachers</button>
+            <button type="button">View All Teachers</button>
         </section>
-        <section>
+        <section class="testimonials">
             <h5>TESTIMONIAL</h5>
-            <p>What Parents Say</p>
-            <div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.
-                    A small river named Duden flows by their place and.</p>
-                <p>“</p>
-                <img class="parent1" src="Parent testimonial-1-150x150.jpg" alt="image of parent 1">
-                <p>Name of Parent</p>
-                <p>parent of SS3 student</p>
-            </div>
-            <div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.
-                    A small river named Duden flows by their place and.</p>
-                <p>“</p>
-                <img class="parent2" src="Parent testimonial-2-150x150.jpg" alt="image of parent 2">
-                <p>Parent's Name</p>
-                <p>parent of SS2 student</p>
-            </div>
-            <div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.
-                    A small river named Duden flows by their place and.</p>
-                <p>“</p>
-                <img class="parent3" src="Parent testimonial-3-150x150.jpg" alt="image of parent 3">
-                <p>Parent's Name</p>
-                <p>parent of JS3 student</p>
+            <p class="testimonial-heading">What Parents Say</p>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                        the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                        A small river named Duden flows by their place and.</p>
+                    <p class="quote-mark">“</p>
+                    <img class="parent1" src="Parent testimonial-1-150x150.jpg" alt="image of parent 1">
+                    <p>Name of Parent</p>
+                    <p>parent of SS3 student</p>
+                </article>
+                <article class="testimonial-card">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                        the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                        A small river named Duden flows by their place and.</p>
+                    <p class="quote-mark">“</p>
+                    <img class="parent2" src="Parent testimonial-2-150x150.jpg" alt="image of parent 2">
+                    <p>Parent's Name</p>
+                    <p>parent of SS2 student</p>
+                </article>
+                <article class="testimonial-card">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                        the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                        A small river named Duden flows by their place and.</p>
+                    <p class="quote-mark">“</p>
+                    <img class="parent3" src="Parent testimonial-3-150x150.jpg" alt="image of parent 3">
+                    <p>Parent's Name</p>
+                    <p>parent of JS3 student</p>
+                </article>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="admissions" id="admission">
+            <div class="admission-quote">
                 <p>“At Edfan we believe education is a partnership between us and the parents.
                     It has helped us keep a culture in which every student wants to succeed.”</p>
                 <p>Mrs Abade Fanny Ogaga</p>
                 <p>Proprietress & Principal</p>
             </div>
-            <div>
+            <div class="admission-panel">
                 <p>Admissions open</p>
                 <h3>Give your child a brighter future.</h3>
                 <p>Our friendly entrance assessment helps us understand your child’s strengths and place them where
                     they’ll thrive.
                     Come and see Edfan for yourself.</p>
-                <button>Learn about Edfan</button>
+                <button type="button">Learn about Edfan</button>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
+    <footer id="contact">
+        <div class="footer-brand">
             <img src="Edfan new logo.jpg" alt="edfan logo" height="130px" width="150px">
             <h3>EDFAN COLLEGE</h3>
             <p>A brighter future assured</p>
         </div>
-        <div>
+        <div class="footer-links">
             <p>Explore</p>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -309,19 +315,19 @@
                 <li><a href="#contact">Contact and Location</a></li>
             </ul>
         </div>
-        <div>
+        <div class="footer-contact">
             <p>Contact Us</p>
             <p>21, Yomi Jokogbola Street, Eyita, Ikorodu, Lagos</p>
-            <p><a href="edfan_college@yahoo.co.uk">edfan_college@yahoo.co.uk</a></p>
-            <p><a href="+234-805-300-8092">+234-805-300-8092<a></p>
+            <p><a href="mailto:edfan_college@yahoo.co.uk">edfan_college@yahoo.co.uk</a></p>
+            <p><a href="tel:+2348053008092">+234-805-300-8092</a></p>
         </div>
-        <div>
+        <div class="footer-meta">
             <p><a href="#privacy">Privacy policy</a></p>
             <p><a href="#terms">Terms of Use</a></p>
             <p><a href="#cookies">Cookie policy</a></p>
             <p><a href="#faqs">FAQs</a></p>
         </div>
-        <p>&copy; 2026 Edfan College. All right reserved.</p>
+        <p class="copyright">&copy; 2026 Edfan College. All right reserved.</p>
     </footer>
     <script src="Edfan.js"></script>
 </body>

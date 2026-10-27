@@ -775,10 +775,283 @@ nav a:hover {
     }
 }
 
-* {
-    border: #000000 1px solid;
+.facilities {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto 90px;
 }
 
+.facilities > p,
+.facilities > h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'poppins', sans-serif;
+}
+
+.facilities > p {
+    margin-bottom: 10px;
+    color: rgb(192, 25, 25);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.facilities > h3 {
+    margin-bottom: 28px;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.facility-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.facility-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.facility-item h4 {
+    margin: 18px 18px 12px;
+    font-size: 1.1rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.facility-item button {
+    margin: 0 18px 18px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: rgb(32, 181, 240);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .facility-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.teachers {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.teachers h2 {
+    margin: 0 0 24px;
+    font-size: clamp(30px, 4vw, 42px);
+}
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.teacher-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #f8fafc;
+    padding: 28px 20px;
+}
+
+.teacher-card p:first-child {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.teacher-card p:last-child {
+    margin: 0;
+    color: #4b5563;
+}
+
+.teachers button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    background: rgb(153, 1, 19);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.testimonials {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.testimonials h5 {
+    margin: 0 0 10px;
+    color: rgb(192, 25, 25);
+    letter-spacing: 0.12em;
+}
+
+.testimonial-heading {
+    margin: 0 0 24px;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+}
+
+.testimonial-card p {
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.quote-mark {
+    font-size: 48px;
+    color: rgb(32, 181, 240);
+    line-height: 0.7 !important;
+    margin: 10px 0 !important;
+}
+
+.testimonial-card img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.admissions {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto 90px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.admission-quote,
+.admission-panel {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 28px;
+}
+
+.admission-quote p:first-child {
+    margin-top: 0;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #111827;
+}
+
+.admission-quote p:nth-child(2) {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.admission-quote p:last-child {
+    margin-top: 6px;
+    color: #6b7280;
+}
+
+.admission-panel p:first-child {
+    color: rgb(192, 25, 25);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.admission-panel h3 {
+    margin: 0 0 14px;
+    font-size: clamp(28px, 4vw, 38px);
+}
+
+.admission-panel p:nth-of-type(2) {
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.admission-panel button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    background: rgb(32, 181, 240);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .teacher-grid,
+    .testimonial-grid,
+    .admissions {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.5fr 1fr;
+    gap: 24px;
+    width: min(1200px, calc(100% - 48px));
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 24px;
+    align-items: start;
+}
+
+.footer-brand h3,
+.footer-links p,
+.footer-contact p:first-child,
+.footer-meta p {
+    margin-top: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding-top: 16px;
+    border-top: 1px solid #d9dde2;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
 
 .academics {
     box-sizing: border-box;
