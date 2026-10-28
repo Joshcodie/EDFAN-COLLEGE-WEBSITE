@@ -481,7 +481,7 @@ nav a:hover {
     }
 
     .feature-card {
-        top: 0;
+        top: 20px;
     }
 
     .card-image {
@@ -507,7 +507,8 @@ nav a:hover {
     }
 
     .learn-more {
-        min-width: 50px;
+        min-width: 60px;
+        padding: 10px;
     }
 }
 
@@ -629,7 +630,7 @@ nav a:hover {
 
 .statistics {
     width: min(1100px, calc(100% - 48px));
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -819,7 +820,7 @@ nav a:hover {
 .facilities>h3 {
     text-align: center;
     margin: 0 auto;
-    font-family: 'gill sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'poppins';
 }
 
 .facilities>p {
@@ -938,7 +939,7 @@ nav a:hover {
     width: 100%;
     margin: 0 0 90px;
     padding: 28px max(24px, calc((100% - 1100px) / 2)) 32px;
-    background: #5acef8;
+    background: #13b9f5;
     color: #263746;
     text-align: center;
 
@@ -1012,7 +1013,7 @@ nav a:hover {
     margin: 0 0 90px;
     padding: 32px max(24px, calc((100% - 1100px) / 2));
     text-align: center;
-    background-color: #98e2ff;
+    background-color: #5acef8;
     margin-bottom: 0;
 }
 
@@ -1068,7 +1069,7 @@ nav a:hover {
     grid-template-columns: 1.2fr 1.8fr;
     gap: 28px;
     align-items: center;
-    background-color: #b3e9ff;
+    background-color: #98e2ff;
     margin-bottom: 0;
 }
 
