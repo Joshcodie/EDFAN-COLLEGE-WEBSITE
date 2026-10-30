@@ -239,9 +239,63 @@ nav a:hover {
     width: 80%;
     height: 65%;
     padding: 10px;
+    box-sizing: border-box;
+    width: min(90%, 1000px);
+    height: auto;
+    padding: clamp(28px, 5vw, 60px) 24px;
 }
-*{
-    border:#000000 solid red;
+
+.hero-section {
+    height: min(100svh, 900px);
+    min-height: 560px;
+}
+
+
+.hero-h1 {
+    margin: 0;
+    font-size: clamp(64px, 11vw, 130px);
+    line-height: 1;
+}
+
+.hero-h2 {
+    top: 0;
+    padding: 0;
+    font-size: clamp(34px, 5vw, 60px);
+    line-height: 1.15;
+}
+
+.hero-p1 {
+    top: 0;
+    max-width: 720px;
+    margin: 12px auto 0;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.6;
+}
+
+.hero-p2 {
+    top: 0;
+    max-width: 720px;
+    margin: 24px auto 0;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.6;
+}
+
+.hero-actions {
+    position: relative;
+    transform: translateX(-12px);
+}
+
+
+
+#hero-start,
+#hero-discover {
+    margin: 22px 6px 0;
+    padding: 12.6px 21.6px;
+    font-size: 14.4px;
+}
+
+#hero-start {
+    margin-left: 100px;
 }
 
 
@@ -1553,64 +1607,6 @@ footer a:focus-visible {
     font-size: clamp(14px, 1.15vw, 17px);
 }
 
-.hero-section {
-    height: min(100svh, 900px);
-    min-height: 560px;
-}
-
-.hero-content {
-    box-sizing: border-box;
-    width: min(90%, 1000px);
-    height: auto;
-    padding: clamp(28px, 5vw, 60px) 24px;
-}
-
-.hero-h1 {
-    margin: 0;
-    font-size: clamp(64px, 11vw, 130px);
-    line-height: 1;
-}
-
-.hero-h2 {
-    top: 0;
-    padding: 0;
-    font-size: clamp(34px, 5vw, 60px);
-    line-height: 1.15;
-}
-
-.hero-p1 {
-    top: 0;
-    max-width: 720px;
-    margin: 12px auto 0;
-    font-size: clamp(14px, 1.5vw, 18px);
-    line-height: 1.6;
-}
-
-.hero-p2 {
-    top: 0;
-    max-width: 720px;
-    margin: 24px auto 0;
-    font-size: clamp(14px, 1.5vw, 18px);
-    line-height: 1.6;
-}
-
-.hero-actions {
-    position: relative;
-    transform: translateX(-12px);
-}
-
-
-
-#hero-start,
-#hero-discover {
-    margin: 22px 6px 0;
-    padding: 12.6px 21.6px;
-    font-size: 14.4px;
-}
-
-#hero-start {
-    margin-left: 100px;
-}
 
 @media (max-width: 1000px) {
     .sticky-nav {
