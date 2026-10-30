@@ -238,7 +238,7 @@ nav a:hover {
     border-radius: 10px;
     width: 80%;
     height: 65%;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
     width: min(90%, 1000px);
     height: auto;
@@ -253,16 +253,26 @@ nav a:hover {
 
 .hero-h1 {
     margin: 0;
-    font-size: clamp(64px, 11vw, 130px);
-    line-height: 1;
+    font-size: clamp(64px, 11vw, 70px);
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 130px;
+    font-family: 'poppins';
+    text-shadow: 2px 2.2px 3.4px rgb(2, 2, 2);
 }
+
 
 .hero-h2 {
     top: 0;
     padding: 0;
-    font-size: clamp(34px, 5vw, 60px);
+    font-size: clamp(34px, 5vw, 40px);
     line-height: 1.15;
 }
+
 
 .hero-p1 {
     top: 0;
@@ -276,7 +286,7 @@ nav a:hover {
     top: 0;
     max-width: 720px;
     margin: 24px auto 0;
-    font-size: clamp(14px, 1.5vw, 18px);
+    font-size: clamp(14px, 1.5vw, 16px);
     line-height: 1.6;
 }
 
@@ -289,7 +299,7 @@ nav a:hover {
 
 #hero-start,
 #hero-discover {
-    margin: 22px 6px 0;
+    margin: 10px 6px 0;
     padding: 12.6px 21.6px;
     font-size: 14.4px;
 }
@@ -1436,18 +1446,7 @@ footer a:focus-visible {
     }
 }
 
-.hero-h1 {
-    margin: 0;
-    position: relative;
-    z-index: 2;
-    color: white;
-    padding: 0;
-    margin-bottom: 0;
-    margin-top: 20px;
-    font-size: 130px;
-    font-family: 'poppins';
-    text-shadow: 2px 3px 3px rgb(2, 2, 2);
-}
+    
 
 .hero-h2 {
     position: relative;
@@ -1778,10 +1777,11 @@ footer a:focus-visible {
         width: 80%;
         height: 65%;
         padding: 10px;
+        padding-top: 0;
     }
 
     .hero-h1 {
-        margin-top: 20px;
+        margin-top: 16px;
         font-size: 130px;
         line-height: normal;
     }
@@ -1804,7 +1804,7 @@ footer a:focus-visible {
     .hero-p2 {
         top: -40px;
         max-width: none;
-        margin: 14px 0 0 192px;
+        margin: 14px 0 -20px 192px;
         font-size: 15px;
         line-height: normal;
     }
