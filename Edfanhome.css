@@ -23,7 +23,6 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 40px;
         font-size: 15px;
         color: white;
 
@@ -31,7 +30,7 @@ body {
 
     .email-header {
         margin: 0;
-        margin-left: 180px;
+        margin-left: 450px;
         font-family: 'poppins';
     }
 
@@ -62,7 +61,7 @@ body {
         position: relative;
         top: 0px;
         padding: 17px;
-        margin-left: 500px;
+        margin-left: 450px;
         background-color: rgb(153, 1, 19);
         border: none;
         cursor: pointer;
@@ -1585,7 +1584,7 @@ body {
         box-sizing: border-box;
         min-height: 60px;
         gap: 20px;
-        padding: 8px clamp(20px, 5vw, 72px);
+        padding: 8px clamp(20px, 12vw, 200px);
     }
 
     .email-header {
