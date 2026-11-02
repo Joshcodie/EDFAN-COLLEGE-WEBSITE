@@ -27,6 +27,23 @@ prevBtn.addEventListener('click', () => {
     startTimer();
 });
 
+['hero-start', 'hero-discover'].forEach((id) => {
+    const button = document.getElementById(id);
+
+    if (button) {
+        button.addEventListener('click', () => {
+            button.getAnimations().forEach((animation) => animation.cancel());
+            button.animate([
+                { transform: 'translateY(0)' },
+                { transform: 'translateY(-12px)', offset: 0.3 },
+                { transform: 'translateY(0)', offset: 0.5 },
+                { transform: 'translateY(-6px)', offset: 0.7 },
+                { transform: 'translateY(0)' }
+            ], { duration: 450, easing: 'ease' });
+        });
+    }
+});
+
 if (navToggle && primaryNavigation) {
     navToggle.addEventListener('click', () => {
         const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
