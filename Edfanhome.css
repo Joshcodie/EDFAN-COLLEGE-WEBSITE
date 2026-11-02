@@ -3,11 +3,10 @@ body {
     padding: 0;
     position: relative;
     top: 0;
-    font-family: 'Poppins', sans-serif;
-}
+    font-family: 'Poppins';
 
 button {
-    font-family: inherit;
+    font-family: 'poppins';
 }
 
 header {
@@ -136,7 +135,7 @@ nav a {
     color: black;
     font-weight: 600;
     font-size: 18px;
-    font-family: inherit;
+    font-family: 'poppins';
 
 }
 
@@ -177,7 +176,7 @@ nav a:hover {
     border-radius: 10px;
     color: white;
     font-weight: 600;
-    font-family: inherit;
+    font-family: 'poppins';
     cursor: pointer;
 }
 
@@ -188,12 +187,12 @@ nav a:hover {
     font-size: 18px;
     color: black;
     margin-right: 100px;
-    background-color: rgba(46, 189, 245, 0.0);
+    background-color: rgba(255, 255, 255, 0.068);
     border: 2px solid rgb(248, 249, 250);
     border-radius: 10px;
     color: white;
     font-weight: 600;
-    font-family: inherit;
+    font-family: 'poppins';
     cursor: pointer;
 }
 
