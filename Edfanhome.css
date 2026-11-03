@@ -313,8 +313,8 @@ body {
     .hero-p1 {
         top: 0;
         max-width: 720px;
-        margin: 40px;
-        font-size: clamp(14px, 1.5vw, 18px);
+      
+        font-size: clamp(14px, 1.5vw, 17px);
         line-height: 1.6;
     }
 
@@ -1483,7 +1483,7 @@ body {
         margin-top: 0;
         margin-right: 0px;
         margin-left: 30px;
-        font-family: 'poppins', sans-serif;
+        font-family: 'poppins';
         font-size: 15px;
     }
 
