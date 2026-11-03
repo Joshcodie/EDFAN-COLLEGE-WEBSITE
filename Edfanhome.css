@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'poppins';
 
 
 }
@@ -9,10 +9,10 @@ body {
     padding: 0;
     position: relative;
     top: 0;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Poppins';
 
     button {
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', 'arial';
     }
 
     header {
@@ -34,7 +34,7 @@ body {
 
     .email-header {
         margin: 0;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', 'arial';
     }
 
     .phone-block {
@@ -49,7 +49,7 @@ body {
     .phone-header {
         padding-left: 20px;
         color: white;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', 'arial';
         margin: 0 auto;
     }
 
@@ -121,7 +121,7 @@ body {
         margin-bottom: 0;
         padding: 0;
         font-size: clamp(24px, 2.5vw, 28px);
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', 'arial';
     }
 
     li {
@@ -193,7 +193,7 @@ body {
         border-radius: 10px;
         color: white;
         font-weight: 600;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', 'arial';
         cursor: pointer;
     }
 
@@ -209,7 +209,7 @@ body {
         border-radius: 10px;
         color: white;
         font-weight: 600;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         cursor: pointer;
     }
 
@@ -294,7 +294,7 @@ body {
     .hero-h1 {
         font-size: clamp(56px, 17vw, 88px);
         color: white;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         text-shadow: 2px 1px 3.4px rgb(2, 2, 2);
         margin: auto;
         line-height: 0.7;
@@ -490,7 +490,7 @@ body {
         font-size: clamp(1.5rem, 0.5vw, 2rem);
         line-height: 1.2;
         font-weight: 600;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
     }
 
     .title-blue {
@@ -513,7 +513,7 @@ body {
         color: #5f6b72;
         font-size: 0.9rem;
         line-height: 1.6;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
     }
 
     .learn-more {
@@ -527,7 +527,7 @@ body {
         font-weight: 700;
         text-decoration: none;
         font-size: 13px;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         margin: 0 auto;
         transition: transform 0.2s ease, opacity 0.2s ease;
     }
@@ -654,7 +654,7 @@ body {
 
     .about-edfan p,
     .about-edfan h2 {
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         margin: auto;
     }
 
@@ -776,7 +776,7 @@ body {
         width: 4ch;
         margin-bottom: 2px;
         margin-top: 0;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         font-size: 40px;
         font-weight: 900;
         font-variant-numeric: tabular-nums;
@@ -789,7 +789,7 @@ body {
     #sub-options p,
     #establish p {
         color: rgb(0, 40, 56);
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         font-size: 13px;
         text-align: center;
         margin-top: 0;
@@ -842,7 +842,7 @@ body {
     .child>h3 {
         grid-column: 1 / -1;
         text-align: center;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', sans-serif;
     }
 
     .child>p {
@@ -863,7 +863,7 @@ body {
         max-width: 720px;
         margin: -4px auto 14px;
         color: #120033;
-        font-family: sans-serif;
+        font-family: 'sans-serif';
         font-size: clamp(28px, 4vw, 40px);
         line-height: 1.2;
     }
@@ -886,7 +886,7 @@ body {
     .child>div h3 {
         margin: 0 0 10px;
         color: #000000;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
         font-size: 20px;
         line-height: 1.35;
     }
@@ -923,7 +923,7 @@ body {
     .facilities>h3 {
         text-align: center;
         margin: 0 auto;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins';
     }
 
     .facilities>p {
@@ -983,7 +983,7 @@ body {
     .facility-item h4 {
         margin: 18px 18px 12px;
         font-size: 1.1rem;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', sans-serif;
     }
 
     .facility-item button {
@@ -1483,7 +1483,7 @@ body {
         margin-top: 0;
         margin-right: 0px;
         margin-left: 30px;
-        font-family: 'Poppins', Arial, sans-serif;
+        font-family: 'poppins', sans-serif;
         font-size: 15px;
     }
 
