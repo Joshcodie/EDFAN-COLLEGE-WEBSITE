@@ -1,6 +1,6 @@
 * {
-    font-family: 'poppins';
-    border: #000000 solid 1px;
+    font-family: 'Poppins', Arial, sans-serif;
+
 
 }
 
@@ -9,10 +9,10 @@ body {
     padding: 0;
     position: relative;
     top: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
 
     button {
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     header {
@@ -23,6 +23,7 @@ body {
         background-color: rgb(32, 181, 240);
         margin-top: 0px;
         display: flex;
+        
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -33,8 +34,7 @@ body {
 
     .email-header {
         margin: 0;
-        margin-left: 300px;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     .phone-block {
@@ -49,7 +49,7 @@ body {
     .phone-header {
         padding-left: 20px;
         color: white;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         margin: 0 auto;
     }
 
@@ -64,7 +64,8 @@ body {
     #apply-button {
         position: relative;
         top: 0px;
-        margin-left: 510px;
+        margin-left: 520px;
+        margin-right: 5px;
         background: linear-gradient(145deg, #ee4949, #af2d2d);
         border: none;
         cursor: pointer;
@@ -108,6 +109,7 @@ body {
         margin-left: 200px;
         margin-top: 3px;
         margin-bottom: 0px;
+        
     }
 
     .sticky-h2 {
@@ -119,7 +121,7 @@ body {
         margin-bottom: 0;
         padding: 0;
         font-size: clamp(24px, 2.5vw, 28px);
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     li {
@@ -180,7 +182,6 @@ body {
     }
 
     #hero-start {
-        position: relative;
         z-index: 2;
         padding: 20px 30px;
         font-size: 18px;
@@ -192,7 +193,7 @@ body {
         border-radius: 10px;
         color: white;
         font-weight: 600;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         cursor: pointer;
     }
 
@@ -208,7 +209,7 @@ body {
         border-radius: 10px;
         color: white;
         font-weight: 600;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         cursor: pointer;
     }
 
@@ -271,7 +272,7 @@ body {
         padding: 0;
         box-sizing: border-box;
         width: min(90%, 1000px);
-        height: auto;
+        min-height: 55dvh;
         padding: clamp(28px, 5vw, 60px) 24px;
     }
 
@@ -280,50 +281,47 @@ body {
         min-height: min(100svh, 900px);
     }
 
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        padding: 0;
+        line-height: 0.9;
+        
+    }
 
     .hero-h1 {
-        margin: 0;
-        font-size: clamp(64px, 11vw, 70px);
-        margin: 0;
-        position: relative;
-        z-index: 2;
+        font-size: clamp(56px, 17vw, 88px);
         color: white;
-        padding: 0;
+        font-family: 'Poppins', Arial, sans-serif;
+        text-shadow: 2px 1px 3.4px rgb(2, 2, 2);
+        margin: auto;
+        line-height: 0.7;
+        margin-top: 20px;
         margin-bottom: 0;
-        font-size: 130px;
-        font-family: 'poppins';
-        text-shadow: 2px 2.2px 3.4px rgb(2, 2, 2);
     }
-
-
-    .hero-h2 {
-        top: 0;
+    .hero-h1>span{
+        color: rgb(192, 25, 25);
+        font-size: clamp(30px, 4vw, 50px);
+        margin: 0;
         padding: 0;
-        font-size: clamp(34px, 5vw, 40px);
-        line-height: 1.15;
-    }
 
+        
+    }
 
     .hero-p1 {
         top: 0;
         max-width: 720px;
-        margin: 12px auto 0;
+        margin: 40px;
         font-size: clamp(14px, 1.5vw, 18px);
         line-height: 1.6;
     }
 
-    .hero-p2 {
-        top: 0;
-        max-width: 720px;
-        margin: 24px auto 0;
-        font-size: clamp(14px, 1.5vw, 16px);
-        line-height: 1.6;
-    }
+
 
     .hero-actions {
-        position: relative;
-        margin-top: -50px;
-        margin-bottom: 30px;
+        margin-top: 30px;
         transform: translateX(-12px);
     }
 
@@ -492,7 +490,7 @@ body {
         font-size: clamp(1.5rem, 0.5vw, 2rem);
         line-height: 1.2;
         font-weight: 600;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     .title-blue {
@@ -515,7 +513,7 @@ body {
         color: #5f6b72;
         font-size: 0.9rem;
         line-height: 1.6;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     .learn-more {
@@ -529,7 +527,7 @@ body {
         font-weight: 700;
         text-decoration: none;
         font-size: 13px;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         margin: 0 auto;
         transition: transform 0.2s ease, opacity 0.2s ease;
     }
@@ -656,7 +654,7 @@ body {
 
     .about-edfan p,
     .about-edfan h2 {
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         margin: auto;
     }
 
@@ -778,7 +776,7 @@ body {
         width: 4ch;
         margin-bottom: 2px;
         margin-top: 0;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         font-size: 40px;
         font-weight: 900;
         font-variant-numeric: tabular-nums;
@@ -791,7 +789,7 @@ body {
     #sub-options p,
     #establish p {
         color: rgb(0, 40, 56);
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         font-size: 13px;
         text-align: center;
         margin-top: 0;
@@ -844,7 +842,7 @@ body {
     .child>h3 {
         grid-column: 1 / -1;
         text-align: center;
-        font-family: 'poppins', sans-serif;
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     .child>p {
@@ -865,7 +863,7 @@ body {
         max-width: 720px;
         margin: -4px auto 14px;
         color: #120033;
-        font-family: 'sans-serif';
+        font-family: sans-serif;
         font-size: clamp(28px, 4vw, 40px);
         line-height: 1.2;
     }
@@ -888,7 +886,7 @@ body {
     .child>div h3 {
         margin: 0 0 10px;
         color: #000000;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
         font-size: 20px;
         line-height: 1.35;
     }
@@ -925,7 +923,7 @@ body {
     .facilities>h3 {
         text-align: center;
         margin: 0 auto;
-        font-family: 'poppins';
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     .facilities>p {
@@ -985,7 +983,7 @@ body {
     .facility-item h4 {
         margin: 18px 18px 12px;
         font-size: 1.1rem;
-        font-family: 'poppins', sans-serif;
+        font-family: 'Poppins', Arial, sans-serif;
     }
 
     .facility-item button {
@@ -1478,63 +1476,25 @@ body {
         }
     }
 
-
-
-    .hero-h2 {
-
-        z-index: 2;
-        color: white;
-        margin: 0;
-        padding-top: 0;
-        padding-right: 155px;
-        font-size: 60px;
-        color: rgb(192, 25, 25);
-        text-shadow: 1px 1px 1px rgb(0, 0, 0);
-        font-family: 'poppins';
-    }
-
-
-
     .hero-p1 {
-        position: relative;
-        top: -30px;
+       
         z-index: 2;
         color: white;
         margin-top: 0;
         margin-right: 0px;
         margin-left: 30px;
-        font-family: 'poppins', sans-serif;
-        font-size: 15px;
-    }
-
-    .hero-p2 {
-        position: relative;
-        top: -40px;
-        z-index: 2;
-        color: white;
-        margin-top: 0;
-        margin-left: 192px;
-        font-family: 'poppins', sans-serif;
+        font-family: 'Poppins', Arial, sans-serif;
         font-size: 15px;
     }
 
     .hero-h1,
-    .hero-h2,
-    .hero-p1,
-    .hero-p2 {
+    .hero-p1 {
         animation: hero-text-slide-in 700ms ease-out both;
     }
 
-    .hero-h2 {
-        animation-delay: 120ms;
-    }
 
     .hero-p1 {
         animation-delay: 240ms;
-    }
-
-    .hero-p2 {
-        animation-delay: 360ms;
     }
 
     @keyframes hero-text-slide-in {
@@ -1552,9 +1512,7 @@ body {
     @media (prefers-reduced-motion: reduce) {
 
         .hero-h1,
-        .hero-h2,
-        .hero-p1,
-        .hero-p2 {
+        .hero-p1 {
             animation: none;
         }
     }
@@ -1653,7 +1611,7 @@ body {
             height: 44px;
             margin-left: auto;
             padding: 0px;
-            border: 1px solid #d5dbe1;
+            border: 1px solid #000000;
             border-radius: 8px;
             background: #fff;
             cursor: pointer;
@@ -1751,12 +1709,9 @@ body {
             font-size: clamp(56px, 17vw, 88px);
         }
 
-        .hero-h2 {
-            font-size: clamp(32px, 10vw, 48px);
-        }
+        
 
-        .hero-p1,
-        .hero-p2 {
+        .hero-p1{
             font-size: 14px;
             text-align: left;
             margin-left: 0;
@@ -1798,8 +1753,7 @@ body {
             padding: 30px 12px;
         }
 
-        .hero-p1,
-        .hero-p2 {
+        .hero-p1 {
             font-size: 13px;
         }
     }
@@ -1807,37 +1761,12 @@ body {
     @media (min-width: 1001px) {
         .hero-content {
             width: 80%;
-            height: 65%;
             padding: 10px;
             padding-top: 0;
         }
 
-        .hero-h1 {
-            margin-top: -10px;
-            font-size: 100px;
-            line-height: normal;
-        }
-
-        .hero-h2 {
-            margin-top: -60px;
-            padding-right: 155px;
-            font-size: 40px;
-            line-height: normal;
-        }
-
         .hero-p1 {
-            top: -65px;
             max-width: none;
-            margin: 0 0 0 30px;
-            font-size: 12px;
-            line-height: normal;
-        }
-
-        .hero-p2 {
-            top: -75px;
-            max-width: none;
-            margin: 14px 0 0px 192px;
-            font-size: 12px;
             line-height: normal;
         }
 
