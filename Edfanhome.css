@@ -1,5 +1,6 @@
 * {
     font-family: 'poppins';
+    border: #000000 solid 1px;
 
 }
 
@@ -23,6 +24,7 @@ body {
         margin-top: 0px;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: center;
         font-size: 15px;
         color: white;
@@ -31,7 +33,7 @@ body {
 
     .email-header {
         margin: 0;
-        margin-left: 450px;
+        margin-left: 300px;
         font-family: 'poppins';
     }
 
@@ -62,7 +64,7 @@ body {
     #apply-button {
         position: relative;
         top: 0px;
-        margin-left: 410px;
+        margin-left: 508px;
         background: linear-gradient(145deg, #ee4949, #af2d2d);
         border: none;
         cursor: pointer;
@@ -87,6 +89,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         text-align: center;
         position: sticky;
         top: 0;
@@ -102,9 +105,9 @@ body {
     .sticky-image {
         height: 90px;
         width: 110px;
-        margin-left: 110px;
+        margin-left: 200px;
         margin-top: 3px;
-        margin-bottom: 3px;
+        margin-bottom: 0px;
     }
 
     .sticky-h2 {
@@ -112,10 +115,10 @@ body {
         color: rgb(153, 1, 19);
         margin-right: 0px;
         margin-top: 0;
-        margin-left: 3px;
+        margin-left: 0px;
         margin-bottom: 0;
         padding: 0;
-        font-size: 35px;
+        font-size: clamp(24px, 2.5vw, 28px);
         font-family: 'poppins';
     }
 
@@ -135,10 +138,10 @@ body {
         flex-direction: row;
         text-align: center;
         align-items: center;
-        gap: 26px;
+        gap: 30px;
         text-decoration: none;
         list-style: none;
-        margin-left: 185px;
+        margin-left: 105px;
 
     }
 
@@ -146,8 +149,9 @@ body {
         text-decoration: none;
         color: black;
         font-weight: 600;
-        font-size: 18px;
-        font-family: 'poppins';
+        font-size: clamp(14px, 1.15vw, 13px);
+        font-family: Arial, Helvetica, sans-serif;
+
 
     }
 
@@ -1583,7 +1587,7 @@ body {
         }
 
         .sticky-nav nav ul {
-            margin-left: 0;
+            margin-left: 0px;
         }
     }
 
@@ -1595,7 +1599,7 @@ body {
         box-sizing: border-box;
         min-height: 60px;
         gap: 20px;
-        padding: 4px clamp(20px, 12vw, 200px);
+        padding: 4px clamp(20px, 5vw, 150px);
     }
 
     .email-header {
@@ -1615,29 +1619,24 @@ body {
 
     .sticky-nav {
         box-sizing: border-box;
-        gap: 12px;
-        padding: 0 clamp(20px, 5vw, 72px);
+        gap: 15px;
+        padding: 0 clamp(20px, 8.5vw, 200px);
     }
 
     .sticky-image {
-        display: block;
+        
         width: 76px;
         height: 72px;
-        margin: 4px 0;
+        margin: 0px 0;
         object-fit: contain;
     }
 
-    .sticky-h2 {
-        font-size: clamp(24px, 2.5vw, 32px);
-    }
-
     .sticky-nav nav ul {
-        gap: clamp(12px, 1.5vw, 24px);
+        gap: clamp(12px, 1.5vw, 25px);
+        margin-right: 0px;
     }
 
-    .sticky-nav nav a {
-        font-size: clamp(14px, 1.15vw, 17px);
-    }
+  
 
 
     @media (max-width: 1000px) {
@@ -1675,7 +1674,7 @@ body {
             left: 0;
             right: 0;
             margin: 0;
-            padding: 10px 20px 18px;
+            padding: 10px 50px;
             background: #fff;
             box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
         }
