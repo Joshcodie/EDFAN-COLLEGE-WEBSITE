@@ -23,7 +23,7 @@ body {
         background-color: rgb(32, 181, 240);
         margin-top: 0px;
         display: flex;
-        
+
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -77,12 +77,12 @@ body {
         box-shadow: inset 0 1px 0px #ffffff59, inset 0 -2px 0 rgba(0, 0, 0, 0.3),
             0 1px 2px rgba(0, 0, 0, 0.4),
             0 8px 24px #5ba0f099;
-            transform: all 0.2s ease;
+        transform: all 0.2s ease;
     }
 
-    #apply-button:active{
+    #apply-button:active {
         translate: 0 3px;
-  box-shadow: inset 0 2px 4px , rgba(0, 0, 0, 0.4);
+        box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
     }
 
 
@@ -109,7 +109,7 @@ body {
         margin-left: 200px;
         margin-top: 3px;
         margin-bottom: 0px;
-        
+
     }
 
     .sticky-h2 {
@@ -183,11 +183,8 @@ body {
 
     #hero-start {
         z-index: 2;
-        padding: 20px 30px;
         font-size: 18px;
         color: black;
-        margin-right: 8px;
-        margin-left: 100px;
         background-color: rgb(46, 189, 245);
         border: none;
         border-radius: 10px;
@@ -200,10 +197,8 @@ body {
     #hero-discover {
         position: relative;
         z-index: 2;
-        padding: 20px 30px;
         font-size: 18px;
         color: black;
-        margin-right: 100px;
         background-color: rgba(255, 255, 255, 0.068);
         border: 2px solid rgb(248, 249, 250);
         border-radius: 10px;
@@ -215,7 +210,7 @@ body {
 
     #hero-start #hero-discover {
         top: -10px;
-        padding: 20px 30px;
+        padding: 10px 10px;
         font-size: 18px;
         box-shadow: 0px 0px 1.5px 1px gray;
         border-radius: 8px;
@@ -272,8 +267,11 @@ body {
         padding: 0;
         box-sizing: border-box;
         width: min(90%, 1000px);
-        min-height: 55dvh;
+        min-height: 50dvh;
         padding: clamp(28px, 5vw, 60px) 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-section {
@@ -281,61 +279,83 @@ body {
         min-height: min(100svh, 900px);
     }
 
-    .hero-text{
+    .hero-text {
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
         padding: 0;
         line-height: 0.9;
-        
+        text-align: left;
+
+    }
+
+    .herotexts-cover {
+        width: min(100%, 320px);
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .hero-h1 {
         font-size: clamp(56px, 17vw, 88px);
         color: white;
         font-family: 'poppins';
-        text-shadow: 2px 1px 3.4px rgb(2, 2, 2);
-        margin: auto;
-        line-height: 0.7;
+        text-shadow: 2px 1px 3px rgb(2, 2, 2);
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 0.55;
         margin-top: 20px;
         margin-bottom: 0;
+        text-wrap: balance;
+        text-align: left;
     }
-    .hero-h1>span{
+
+    .hero-h1>span {
         color: rgb(192, 25, 25);
         font-size: clamp(30px, 4vw, 50px);
+        text-shadow: 1px 0px 2px rgb(2, 2, 2);
         margin: 0;
-        padding: 0;
-
         
+        padding: 0;
+        text-align: left;
+
+
     }
 
     .hero-p1 {
         top: 0;
+        width: 100%;
         max-width: 720px;
-        font-size: clamp(5px, 0.8vw, 10px);
+        font-size: 10px;
         line-height: 1.6;
+        text-align: left;
+        padding-top: 15px;
+        box-sizing: border-box;
+        
     }
 
-
+    .hero-p1>span {
+        text-align: left;
+    }
 
     .hero-actions {
-        margin-top: 30px;
-        transform: translateX(-12px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 15px;
+        transform: none;
+     
     }
 
-
-
-    #hero-start,
-    #hero-discover {
-        margin: 10px 6px 0;
-        padding: 12.6px 21.6px;
-        font-size: 14.4px;
-    }
-
-    #hero-start {
-        margin-left: 100px;
-    }
 
 
     /* Slides fade in and out when the "active" class is added or removed */
@@ -419,8 +439,8 @@ body {
     }
 
     .feature-cards {
-        width: min(1250px, calc(100% - 48px));
-        max-width: 1250px;
+        width: min(1150px, calc(100% - 48px));
+        max-width: 1150px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -445,7 +465,7 @@ body {
 
     .card-image {
         width: 100%;
-        height: 330px;
+        height: 310px;
         overflow: hidden;
         border-radius: 10px 10px 0 0;
     }
@@ -486,9 +506,9 @@ body {
     .card-body2 h3,
     .card-body3 h3 {
         margin: 0 0 16px;
-        font-size: clamp(1.5rem, 0.5vw, 2rem);
+        font-size: clamp(1.3rem, 0.5vw, 2rem);
         line-height: 1.2;
-        font-weight: 600;
+        font-weight: 700;
         font-family: 'poppins';
     }
 
@@ -510,7 +530,7 @@ body {
         margin: 0 auto 22px;
         max-width: 340px;
         color: #5f6b72;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1.6;
         font-family: 'poppins';
     }
@@ -519,13 +539,13 @@ body {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-width: 150px;
-        padding: 10px 2px;
+        min-width: 110px;
+        padding: 8px 0px;
         border-radius: 5px;
         color: #fff;
-        font-weight: 700;
+        font-weight: 600;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 12px;
         font-family: 'poppins';
         margin: 0 auto;
         transition: transform 0.2s ease, opacity 0.2s ease;
@@ -538,7 +558,7 @@ body {
 
     .learn-more span {
         margin-left: 8px;
-        font-size: 1rem;
+        font-size: 0.8rem;
 
 
     }
@@ -633,8 +653,6 @@ body {
         }
     }
 
-    .about-edfan {}
-
     .about-edfan img {
         position: relative;
         z-index: 2;
@@ -658,7 +676,7 @@ body {
     }
 
     .about-edfan h2 {
-        font-size: 35px;
+        font-size: 27px;
     }
 
     #about-welcome {
@@ -671,7 +689,7 @@ body {
     .about-edfan p {
         color: #353535;
         margin-top: 5px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .about-section {
@@ -692,12 +710,12 @@ body {
     .about-edfan ul {
         margin-bottom: 0;
         margin-top: 7px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .about-story-button {
         margin-top: 18px;
-        padding: 12px 24px;
+        padding: 10px 19px;
         border: 0;
         border-radius: 25px;
         background-color: rgb(91, 193, 233);
@@ -710,6 +728,7 @@ body {
         background-color: #36a9d6;
         box-shadow: 0 0 10px rgba(54, 169, 214, 0.8), 0 0 24px rgba(54, 169, 214, 0.55);
         animation: button-glow 2.4s ease-in-out infinite;
+        font-size: 14px;
     }
 
     .about-story-button:hover {
@@ -847,14 +866,13 @@ body {
     .child>p {
         justify-self: center;
         margin: 0;
-        padding: 7px 16px;
+        padding: 7px 14px;
         border: 2px solid #68cfff;
         border-radius: 999px;
         background-color: #eef4f7;
         color: #0277ad;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 700;
-        letter-spacing: 0.08em;
         text-transform: uppercase;
     }
 
@@ -863,7 +881,7 @@ body {
         margin: -4px auto 14px;
         color: #120033;
         font-family: 'sans-serif';
-        font-size: clamp(28px, 4vw, 40px);
+        font-size: clamp(25px, 3vw, 35px);
         line-height: 1.2;
     }
 
@@ -886,14 +904,14 @@ body {
         margin: 0 0 10px;
         color: #000000;
         font-family: 'poppins';
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.35;
     }
 
     .child>div p {
         margin: 0;
         color: #363f4d;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.7;
     }
 
@@ -928,15 +946,15 @@ body {
     .facilities>p {
         margin-bottom: 10px;
         color: rgb(192, 25, 25);
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 700;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
     }
 
     .facilities>h3 {
         margin-bottom: 28px;
-        font-size: clamp(28px, 4vw, 40px);
+        font-size: clamp(20px, 2.5vw, 30px);
         line-height: 1.2;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 900;
@@ -981,13 +999,13 @@ body {
 
     .facility-item h4 {
         margin: 18px 18px 12px;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         font-family: 'poppins', sans-serif;
     }
 
     .facility-item button {
         margin: 0 18px 18px;
-        padding: 10px 16px;
+        padding: 8px 12px;
         border: none;
         border-radius: 999px;
         background: rgb(32, 181, 240);
@@ -995,6 +1013,7 @@ body {
         font-weight: 600;
         cursor: pointer;
         transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+        font-size: 11px;
     }
 
     .facility-item button:hover,
@@ -1060,7 +1079,7 @@ body {
     .teachers h2 {
         margin: 0 0 44px;
         color: #263746;
-        font-size: clamp(24px, 3vw, 30px);
+        font-size: clamp(15px, 1.8vw, 23px);
     }
 
     .teacher-grid {
@@ -1078,6 +1097,12 @@ body {
         background: #fff;
     }
 
+    .teacher-card:hover{
+         transform: translateY(-6px);
+        border-color: #ce1b1b;
+        box-shadow: 0 16px 30px rgba(15, 23, 42, 0.14);
+    }
+
     .teacher-photo {
         min-height: 206px;
         background: #e8f4f8;
@@ -1091,24 +1116,38 @@ body {
     .teacher-card p:first-child {
         margin: 0 0 8px;
         color: #e74747;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 
     .teacher-card p:last-child {
         margin: 0;
         color: #777;
+        font-size: 15px;
     }
 
     .teachers button {
-        padding: 12px 24px;
+        padding: 10px 20px;
         border: none;
-        border-radius: 999px;
-        background: rgb(153, 1, 19);
+        border-radius: 25px;
+        background: linear-gradient( #df2727, #861515);
         color: #fff;
         font-weight: 600;
         cursor: pointer;
+        box-shadow: inset 0 1px 0px #ffffff59, inset 0 -2px 0 rgba(0, 0, 0, 0.3),
+            0 1px 2px rgba(0, 0, 0, 0.4),
+            0 8px 24px #5ba0f099;
+        transform: all 0.2s ease;
     }
+
+    .teachers button:active {
+        translate: 0 3px;
+        box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
+    }
+
+.teachers button:hover {
+    background: linear-gradient(red, darkred) ;
+}
 
     .testimonials {
         box-sizing: border-box;
@@ -1322,6 +1361,7 @@ body {
 
     .academics {
         box-sizing: border-box;
+        position:relative;
         width: 85%;
         margin: 0 auto;
         margin-top: -130px;
@@ -1344,11 +1384,11 @@ body {
     .academics-content>p:first-child {
         grid-column: 1;
         grid-row: 1;
-        margin: 0 0 10px;
+        margin: 0 0 7px;
         color: rgb(192, 25, 25);
-        font-size: 13px;
+        font-size: 11.5px;
         font-weight: 700;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
     }
 
@@ -1357,7 +1397,7 @@ body {
         grid-row: 2;
         margin: 0 0 18px;
         color: #000000;
-        font-size: clamp(25px, 3vw, 30px);
+        font-size: clamp(18px, 2.2vw, 26px);
         font-weight: 600;
         line-height: 1.2;
     }
@@ -1379,7 +1419,7 @@ body {
         grid-row: 5;
         justify-self: start;
         margin-top: 8px;
-        padding: 12px 24px;
+        padding: 10px 22px;
         border: 0;
         border-radius: 25px;
         background-color: rgb(78, 190, 235);
@@ -1390,6 +1430,7 @@ body {
         box-shadow: 0 0 10px rgba(75, 190, 235, 0.65), 0 0 22px rgba(75, 190, 235, 0.4);
         transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
         animation: button-glow 2.4s ease-in-out infinite;
+        font-size: 14px;
     }
 
     .academics-story-button:hover {
@@ -1412,17 +1453,14 @@ body {
 
     @media (prefers-reduced-motion: reduce) {
 
-        .about-story-button,
-        .academics-story-button {
-            animation: none;
-        }
+       
     }
 
     .academics-content>p:nth-of-type(2),
     .academics-content>p:nth-of-type(3) {
         margin: 0 0 12px;
         color: #53647b;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.6;
     }
 
@@ -1476,12 +1514,12 @@ body {
     }
 
     .hero-p1 {
-       
+
         z-index: 2;
         color: white;
         margin-top: 0;
         margin-right: 0px;
-        margin-left: 30px;
+        margin-left: 0;
         font-family: 'poppins';
         font-size: 15px;
     }
@@ -1581,7 +1619,7 @@ body {
     }
 
     .sticky-image {
-        
+
         width: 76px;
         height: 72px;
         margin: 0px 0;
@@ -1593,7 +1631,7 @@ body {
         margin-right: 0px;
     }
 
-  
+
 
 
     @media (max-width: 1000px) {
@@ -1708,9 +1746,9 @@ body {
             font-size: clamp(56px, 17vw, 88px);
         }
 
-        
 
-        .hero-p1{
+
+        .hero-p1 {
             font-size: 14px;
             text-align: left;
             margin-left: 0;
@@ -1721,7 +1759,7 @@ body {
         #hero-discover {
             display: block;
             width: min(100%, 280px);
-            margin: 12px auto 0;
+            margin: 12px 0 0;
             padding: 11.7px 16.2px;
             font-size: 13.5px;
         }
@@ -1770,14 +1808,14 @@ body {
         }
 
         #hero-start {
-            margin: 0px 8px 0 100px;
-            padding: 13px 22px;
+            margin: 0px 8px 0 0;
+            padding: 11px 16px;
             font-size: 13.2px;
         }
 
         #hero-discover {
-            margin: 0 100px 0 0;
-            padding: 11px 22px;
+            margin: 0 0px 0 0;
+            padding: 9px 16px;
             font-size: 13.2px;
         }
 
