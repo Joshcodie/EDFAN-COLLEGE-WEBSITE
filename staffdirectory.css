@@ -417,4 +417,372 @@ body {
         }
     }
 
-    
+.staff-hero {
+    display: flex;
+    align-items: center;
+    min-height: 430px;
+    padding: clamp(56px, 8vw, 104px) 24px;
+    box-sizing: border-box;
+    color: #f7f5ef;
+    background: linear-gradient(110deg, #172433 0%, #23384a 100%);
+}
+
+.staff-hero-content {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.staff-eyebrow {
+    margin: 0 0 16px;
+    color: #e8872d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.staff-hero-title {
+    max-width: 760px;
+    margin: 0;
+    color: #f7f5ef;
+    font-size: clamp(40px, 6vw, 68px);
+    letter-spacing: -0.04em;
+    line-height: 1.08;
+}
+
+.staff-hero-copy {
+    max-width: 660px;
+    margin: 22px 0 0;
+    color: #c5cbd0;
+    font-size: clamp(16px, 1.8vw, 19px);
+    line-height: 1.75;
+}
+
+.staff-leadership {
+    width: min(100% - 48px, 1120px);
+    margin: 0 auto;
+    padding: clamp(56px, 8vw, 88px) 0;
+}
+
+.staff-section-intro {
+    max-width: 760px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.staff-section-title {
+    margin: 0;
+    color: #172433;
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+}
+
+.staff-leaders {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.staff-leader {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e6e9ec;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(23, 36, 51, 0.08);
+}
+
+.staff-leader-image {
+    position: relative;
+    min-height: 290px;
+    overflow: hidden;
+    background: #e9edf0;
+}
+
+.staff-leader-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 290px;
+    object-fit: cover;
+}
+
+.staff-role {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 12px 14px;
+    color: #ffffff;
+    background: #e8872d;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.staff-leader-info {
+    align-self: center;
+    padding: 24px;
+}
+
+.staff-leader-name {
+    margin: 0 0 12px;
+    color: #172433;
+    font-size: clamp(19px, 2vw, 24px);
+    line-height: 1.3;
+}
+
+.staff-leader-copy {
+    margin: 0;
+    color: #5b6670;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.staff-team {
+    padding: clamp(56px, 8vw, 88px) max(24px, calc((100% - 1120px) / 2));
+    background: #f6f7f8;
+}
+
+.staff-team-intro {
+    margin-bottom: 48px;
+}
+
+.staff-group {
+    margin-top: 40px;
+}
+
+.staff-group-intro {
+    margin-bottom: 20px;
+}
+
+.staff-group-title {
+    margin: 0 0 8px;
+    color: #172433;
+    font-size: clamp(22px, 3vw, 30px);
+    letter-spacing: -0.025em;
+}
+
+.staff-group-description {
+    max-width: 720px;
+    margin: 0;
+    color: #5b6670;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.staff-department-grid {
+    margin-top: 56px;
+}
+
+.staff-department-intro {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.staff-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e6e9ec;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(23, 36, 51, 0.06);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(23, 36, 51, 0.12);
+}
+
+.staff-card-photo {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #e9edf0;
+}
+
+.staff-card-name {
+    margin: 0 0 8px;
+    color: #172433;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+.staff-card-role {
+    margin: 0 0 10px;
+    color: #e8872d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.staff-card-credentials {
+    margin: 0;
+    color: #68737d;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.staff-card-name,
+.staff-card-role,
+.staff-card-credentials {
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+.staff-card-name {
+    margin-top: 18px;
+}
+
+.staff-card-credentials {
+    margin-bottom: 20px;
+}
+
+.staff-cta {
+    padding: clamp(48px, 7vw, 76px) 24px;
+    color: #ffffff;
+    background: #172433;
+    text-align: center;
+}
+
+.staff-cta-title {
+    margin: 0 0 12px;
+    color: #f7f5ef;
+    font-size: clamp(28px, 4vw, 40px);
+    letter-spacing: -0.03em;
+}
+
+.staff-cta-copy {
+    max-width: 620px;
+    margin: 0 auto 24px;
+    color: #c5cbd0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.staff-cta-button {
+    min-height: 46px;
+    padding: 12px 22px;
+    border: 1px solid #e8872d;
+    border-radius: 999px;
+    color: #ffffff;
+    background: #e8872d;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.staff-cta-button:hover {
+    transform: translateY(-2px);
+    background: #d9771d;
+}
+
+@media (max-width: 1000px) {
+    .staff-leaders {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .staff-hero {
+        min-height: 360px;
+        padding: 56px 22px;
+    }
+
+    .staff-hero-title {
+        font-size: clamp(36px, 10vw, 52px);
+    }
+
+    .staff-hero-copy {
+        margin-top: 18px;
+        font-size: 16px;
+    }
+
+    .staff-leadership {
+        width: calc(100% - 36px);
+        padding: 52px 0;
+    }
+
+    .staff-leader {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-leader-image {
+        min-height: 230px;
+    }
+
+    .staff-leader-photo {
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .staff-leader-info {
+        padding: 22px;
+    }
+
+    .staff-team {
+        padding: 52px 18px;
+    }
+
+    .staff-team-intro {
+        margin-bottom: 38px;
+    }
+
+    .staff-grid {
+        gap: 14px;
+    }
+
+    .staff-card-photo {
+        height: 160px;
+    }
+
+    .staff-card-name,
+    .staff-card-role,
+    .staff-card-credentials {
+        margin-right: 14px;
+        margin-left: 14px;
+    }
+
+    .staff-card-name {
+        margin-top: 14px;
+        font-size: 15px;
+    }
+
+    .staff-card-credentials {
+        margin-bottom: 16px;
+    }
+
+    .staff-cta {
+        padding: 48px 18px;
+    }
+}
+
+@media (max-width: 380px) {
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-card-photo {
+        height: 200px;
+    }
+
+    .staff-cta-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
