@@ -330,7 +330,7 @@ main {
 .values-section h3 {
     margin: 0 0 16px;
     color: rgb(192, 25, 25);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.18em;
     line-height: 1.5;
@@ -344,6 +344,7 @@ main {
     border-radius: 25px;
     padding: 3px 11px;
     color: white;
+    font-size: 10px;
 }
 
 .about-hero h1 {
@@ -395,13 +396,14 @@ main {
 
 .message-section {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
-    align-items: center;
-    gap: clamp(32px, 7vw, 88px);
+    grid-template-columns:  minmax(260px, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(10px, 2vw, 30px);
     width: min(100% - 48px, 1120px);
     margin: 0 auto;
-    padding: clamp(64px, 8vw, 90px) 0;
+    padding: clamp(64px, 8vw, 90px);
     border-bottom: 1px solid #e8e9e9;
+    border: #000000 solid 2px;
 }
 
 .message-copy h1 {
@@ -411,24 +413,40 @@ main {
     font-weight: 600;
     letter-spacing: -0.035em;
     line-height: 1.18;
+    border: #000000 solid 2px;
 }
 
 .message-copy p {
     margin: 0;
     color: #5b6670;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.85;
+    border: #000000 solid 2px;
+}
+
+.message-copy h1,
+.message-copy p,
+.message-copy h3 {
+    text-align: left;
 }
 
 .message-image {
     display: block;
     width: 100%;
-    max-height: 540px;
+    max-width: 320px;
+    max-height: 440px;
     aspect-ratio: 4 / 5;
     border-radius: 10px;
     background: #e9edf0;
     object-fit: cover;
     object-position: center;
+    justify-self: center;
+    padding: 10px;
+    border: #000000 solid 2px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    margin: 0;
+    position: relative;
+    top: 33px;
 }
 
 .message-quote {
