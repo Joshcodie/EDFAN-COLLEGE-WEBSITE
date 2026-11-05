@@ -14,6 +14,7 @@ body {
     position: relative;
     top: 0;
     font-family: 'Poppins';
+}
 
     button {
         font-family: 'poppins', 'arial';
@@ -551,7 +552,7 @@ body {
     .hero-overlay {
         position: absolute;
         inset: 0;
-        background-color: rgba(0, 35, 51, 0.753);
+        background-color: rgba(0, 28, 51, 0.753);
         /* skyblue at 50% opacity */
         z-index: 1;
     }
