@@ -24,7 +24,7 @@ body {
     }
 
     .info-header {
-        background-color: rgb(32, 181, 240);
+        background-color: rgb(5, 168, 233);
         margin-top: 0px;
         display: flex;
 
@@ -315,7 +315,7 @@ body {
         z-index: 2;
         font-size: 18px;
         color: black;
-        background-color: rgb(46, 189, 245);
+        background-color: rgb(5, 168, 233);
         border: none;
         border-radius: 10px;
         color: white;
@@ -551,7 +551,7 @@ body {
     .hero-overlay {
         position: absolute;
         inset: 0;
-        background-color: rgba(2, 51, 71, 0.5);
+        background-color: rgba(0, 34, 70, 0.692);
         /* skyblue at 50% opacity */
         z-index: 1;
     }
