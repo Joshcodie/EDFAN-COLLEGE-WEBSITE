@@ -403,7 +403,7 @@ main {
     margin: 0 auto;
     padding: clamp(64px, 8vw, 90px);
     border-bottom: 1px solid #e8e9e9;
-    border: #000000 solid 2px;
+    
 }
 
 .message-copy h1 {
@@ -413,7 +413,7 @@ main {
     font-weight: 600;
     letter-spacing: -0.035em;
     line-height: 1.18;
-    border: #000000 solid 2px;
+    
 }
 
 .message-copy p {
@@ -421,13 +421,15 @@ main {
     color: #5b6670;
     font-size: 14px;
     line-height: 1.85;
-    border: #000000 solid 2px;
+    text-wrap: balance;
+    
 }
 
 .message-copy h1,
 .message-copy p,
 .message-copy h3 {
     text-align: left;
+    text-wrap: wrap;
 }
 
 .message-image {
@@ -446,7 +448,7 @@ main {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
     margin: 0;
     position: relative;
-    top: 33px;
+    top: 188px;
 }
 
 .message-quote {
