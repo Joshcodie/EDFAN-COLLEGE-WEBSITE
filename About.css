@@ -337,6 +337,10 @@ main {
     text-transform: uppercase;
 }
 
+.about-hero h3 {
+    justify-self: flex-start;
+}
+
 .about-hero h1 {
     max-width: 820px;
     margin: 0;
