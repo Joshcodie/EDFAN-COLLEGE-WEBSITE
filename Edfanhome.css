@@ -551,7 +551,7 @@ body {
     .hero-overlay {
         position: absolute;
         inset: 0;
-        background-color: rgba(0, 34, 70, 0.692);
+        background-color: rgba(0, 35, 51, 0.753);
         /* skyblue at 50% opacity */
         z-index: 1;
     }
@@ -808,7 +808,7 @@ body {
     }
 
     .title-blue {
-        color: rgb(32, 181, 240);
+        color: rgb(5, 168, 233);
     }
 
     .title-red {
@@ -859,7 +859,7 @@ body {
     }
 
     .btn-blue {
-        background: rgb(32, 181, 240);
+        background: rgb(5, 168, 233);
 
     }
 
@@ -959,7 +959,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         box-sizing: border-box;
-        background-color: rgba(4, 182, 252, 0.1);
+        background-color: rgba(0, 158, 221, 0.164);
         justify-content: center;
         border-radius: 10px;
         position: relative;
@@ -1003,7 +1003,7 @@ body {
         font-size: 40px;
         font-weight: 900;
         font-variant-numeric: tabular-nums;
-        color: rgb(7, 125, 172);
+        color: rgb(2, 102, 141);
 
     }
 
@@ -1087,7 +1087,7 @@ body {
         padding: 10px 19px;
         border: 0;
         border-radius: 25px;
-        background-color: rgb(91, 193, 233);
+        background-color: rgb(5, 168, 233);
         color: #fff;
         font: inherit;
         font-weight: 600;
@@ -1306,7 +1306,7 @@ body {
         padding: 10px 22px;
         border: 0;
         border-radius: 25px;
-        background-color: rgb(78, 190, 235);
+        background-color: rgb(5, 168, 233);
         color: #fff;
         font: inherit;
         font-weight: 600;
@@ -1475,7 +1475,7 @@ body {
         padding: 8px 12px;
         border: none;
         border-radius: 999px;
-        background: rgb(32, 181, 240);
+        background: rgb(5, 168, 233);
         color: #fff;
         font-weight: 600;
         cursor: pointer;
