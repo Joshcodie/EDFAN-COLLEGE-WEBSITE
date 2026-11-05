@@ -400,7 +400,7 @@ main {
     gap: clamp(32px, 7vw, 88px);
     width: min(100% - 48px, 1120px);
     margin: 0 auto;
-    padding: clamp(64px, 9vw, 112px) 0;
+    padding: clamp(64px, 8vw, 90px) 0;
     border-bottom: 1px solid #e8e9e9;
 }
 
