@@ -447,8 +447,7 @@ main {
     object-position: center;
     justify-self: center;
     padding: 10px;
-    border: #000000 solid 2px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 8px 24px rgba(0, 174, 255, 0.16);
     margin: 0;
     position: relative;
     top: 38px;
@@ -517,19 +516,25 @@ main {
     margin: 0;
     color: #404850;
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 2.2;
     font-weight: 600;
 }
 
 .values-section {
     padding: clamp(60px, 8vw, 92px) clamp(22px, 6vw, 80px);
     color: #ffffff;
-    background: #172433;
+    background: #00364b;
     text-align: center;
 }
 
 .values-section h3 {
     margin-bottom: 12px;
+    color: white;
+    border: 2px solid #3a9dfa;
+    background-color: #0000003b;
+    justify-self: center;
+    border-radius: 25px;
+    padding: 3px 11px;
 }
 
 .values-section h2 {
@@ -551,27 +556,154 @@ main {
 }
 
 .value-card {
+    position: relative;
     min-height: 112px;
-    padding: 20px 14px;
+    padding: 0;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.05);
-    text-align: left;
+    perspective: 1000px;
+    overflow: hidden;
 }
 
-.value-card p:first-child {
-    margin: 0 0 8px;
+.value-card-button {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: inherit;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+.value-card-button:focus-visible {
+    outline: 3px solid #ed963f;
+    outline-offset: -4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .value-card-button {
+        cursor: none;
+    }
+
+    .value-card-cursor {
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+        width: 38px;
+        height: 46px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-19px, -3px);
+        transition: opacity 0.15s ease;
+    }
+
+    .value-card-cursor.is-visible {
+        opacity: 1;
+    }
+
+    .value-card-cursor svg {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.35))
+            drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+    }
+
+    .value-card-cursor::before,
+    .value-card-cursor::after {
+        position: absolute;
+        top: 8px;
+        left: 19px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        content: "";
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.35);
+        animation: value-card-cursor-ripple 1.8s ease-out infinite;
+    }
+
+    .value-card-cursor::after {
+        animation-delay: 0.9s;
+    }
+}
+
+@keyframes value-card-cursor-ripple {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(0.35);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+}
+
+.value-card-inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.value-card.is-flipped .value-card-inner {
+    transform: rotateY(180deg);
+}
+
+.value-card-face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 14px;
+    border-radius: inherit;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.value-card-front {
     color: #ed963f;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
 
-.value-card p:last-child {
-    margin: 0;
+.value-card-back {
+    transform: rotateY(180deg);
     color: #f7f5ef;
+    background: #074c65;
     font-size: 16px;
     font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .value-card-inner {
+        transition: none;
+    }
+
+    .value-card-cursor::before,
+    .value-card-cursor::after {
+        animation: none;
+    }
+}
+
+@media (min-width: 901px) {
+    .value-card:nth-child(n + 5) {
+        transform: translateX(calc(50% + 7px));
+    }
 }
 
 .board-section {
@@ -842,10 +974,13 @@ footer a:focus-visible {
 
     .value-card {
         min-height: 96px;
+    }
+
+    .value-card-face {
         padding: 16px 12px;
     }
 
-    .value-card p:last-child {
+    .value-card-back {
         font-size: 14px;
     }
 
