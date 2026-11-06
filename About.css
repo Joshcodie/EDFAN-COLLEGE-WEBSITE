@@ -401,24 +401,25 @@ main {
     gap: clamp(10px, 2vw, 30px);
     width: min(100% - 48px, 1120px);
     margin: 0 auto;
-    padding: clamp(64px, 8vw, 90px);
-    border-bottom: 1px solid #e8e9e9;
+    padding: clamp(64px, 8vw, 70px);
+    border-bottom: 1px solid #d3d3d3;
     
 }
 
 .message-copy h1 {
     margin: 0 0 20px;
-    color: #172433;
-    font-size: clamp(20px, 2.6vw, 36px);
+    color: #020c16;
+    font-size: clamp(20px, 2.6vw, 30px);
     font-weight: 600;
     letter-spacing: -0.035em;
-    line-height: 1.18;
+    line-height: 1.03;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
 .message-copy p {
     margin: 0;
-    color: #5b6670;
+    color: #20262c;
     font-size: 14px;
     line-height: 1.85;
     text-wrap: balance;
@@ -448,21 +449,22 @@ main {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
     margin: 0;
     position: relative;
-    top: 188px;
+    top: 38px;
 }
 
 .message-quote {
     margin: 0 0 20px;
     padding: 16px 20px;
-    border-left: 3px solid #e8872d;
+    border-left: 3px solid rgb(1, 148, 216);
     border-radius: 0 8px 8px 0;
-    background: #fff5eb;
+    background: rgba(5, 142, 233, 0.103);
 }
 
 .message-quote p {
-    color: #263746;
-    font-size: 16px;
+    color: #192c3f;
+    font-size: 14px;
     font-weight: 600;
+   
 }
 
 .mission-section {
