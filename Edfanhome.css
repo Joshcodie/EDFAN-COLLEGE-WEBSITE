@@ -3,7 +3,7 @@
 
 
 * {
-    font-family: 'poppins';
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
 
 
 }
@@ -88,6 +88,7 @@ body {
     #apply-button:active {
         translate: 0 3px;
         box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
+        background: linear-gradient(145deg, #df2828, #991c1c);
     }
 
 
@@ -321,7 +322,7 @@ body {
         border-radius: 10px;
         color: white;
         font-weight: 600;
-        font-family: 'poppins', 'arial';
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
         cursor: pointer;
     }
 
@@ -335,7 +336,7 @@ body {
         border-radius: 10px;
         color: white;
         font-weight: 600;
-        font-family: 'poppins';
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
         cursor: pointer;
     }
 
@@ -346,6 +347,7 @@ body {
         box-shadow: 0px 0px 1.5px 1px gray;
         border-radius: 8px;
         transition: transform 0.1s ease;
+        
 
     }
 
@@ -419,7 +421,7 @@ body {
         padding: 0;
         line-height: 0.9;
         text-align: left;
-
+        font-family: 'poppins' Arial, Helvetica, sans-serif;
     }
 
     .herotexts-cover {
@@ -436,7 +438,7 @@ body {
     .hero-h1 {
         font-size: clamp(56px, 17vw, 88px);
         color: white;
-        font-family: 'poppins';
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
         text-shadow: 2px 1px 3px rgb(2, 2, 2);
         width: 100%;
         margin-left: 0;
@@ -446,6 +448,7 @@ body {
         margin-bottom: 0;
         text-wrap: balance;
         text-align: left;
+        
     }
 
     .hero-h1>span {
@@ -466,7 +469,6 @@ body {
         max-width: 720px;
         font-size: 10px;
         line-height: 1.6;
-        text-align: left;
         padding-top: 15px;
         box-sizing: border-box;
         
@@ -484,7 +486,7 @@ body {
         width: 100%;
         margin-top: 15px;
         transform: none;
-     
+        
     }
 
 
@@ -805,7 +807,7 @@ body {
         font-size: clamp(1.3rem, 0.5vw, 2rem);
         line-height: 1.2;
         font-weight: 700;
-        font-family: 'poppins';
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
     }
 
     .title-blue {
@@ -842,7 +844,6 @@ body {
         font-weight: 600;
         text-decoration: none;
         font-size: 12px;
-        font-family: 'poppins';
         margin: 0 auto;
         transition: transform 0.2s ease, opacity 0.2s ease;
     }
@@ -1000,12 +1001,11 @@ body {
         width: 4ch;
         margin-bottom: 2px;
         margin-top: 0;
-        font-family: 'poppins';
         font-size: 40px;
         font-weight: 900;
         font-variant-numeric: tabular-nums;
         color: rgb(2, 102, 141);
-
+        justify-self: center;
     }
 
     #class p,
@@ -1013,10 +1013,10 @@ body {
     #sub-options p,
     #establish p {
         color: rgb(0, 40, 56);
-        font-family: 'poppins';
         font-size: 13px;
         text-align: center;
         margin-top: 0;
+        justify-self: center;
     }
 
     .line-divider {
@@ -1041,7 +1041,6 @@ body {
 
     .about-edfan p,
     .about-edfan h2 {
-        font-family: 'poppins';
         margin: auto;
     }
 
@@ -1051,7 +1050,7 @@ body {
 
     #about-welcome {
         color: rgb(192, 25, 25);
-        margin-top: -20px;
+        margin-top: -15px;
         font-weight: 600;
         font-size: 15px;
     }
@@ -1060,6 +1059,8 @@ body {
         color: #353535;
         margin-top: 5px;
         font-size: 15px;
+        text-wrap: balance;
+        line-height: 1.2;
     }
 
     .about-section {
@@ -1156,7 +1157,7 @@ body {
     .child>h3 {
         grid-column: 1 / -1;
         text-align: center;
-        font-family: 'poppins', sans-serif;
+        
     }
 
     .child>p {
@@ -1176,7 +1177,7 @@ body {
         max-width: 720px;
         margin: -4px auto 14px;
         color: #120033;
-        font-family: 'sans-serif';
+        font-family:   'Times New Roman', Times, serif;
         font-size: clamp(25px, 3vw, 35px);
         line-height: 1.2;
     }
@@ -1199,7 +1200,7 @@ body {
     .child>div h3 {
         margin: 0 0 10px;
         color: #000000;
-        font-family: 'poppins';
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
         font-size: 18px;
         line-height: 1.35;
     }
@@ -1408,7 +1409,7 @@ body {
     .facilities>h3 {
         text-align: center;
         margin: 0 auto;
-        font-family: 'poppins';
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
     }
 
     .facilities>p {
@@ -1598,7 +1599,7 @@ body {
         padding: 10px 20px;
         border: none;
         border-radius: 25px;
-        background: linear-gradient( #df2727, #861515);
+        background: linear-gradient(red, darkred);
         color: #fff;
         font-weight: 600;
         cursor: pointer;
@@ -1613,8 +1614,8 @@ body {
         box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
     }
 
-.teachers button:hover {
-    background: linear-gradient(red, darkred) ;
+.teachers button:active {
+    background: linear-gradient( #df2727, #861515) ;
 }
 
     .testimonials {
@@ -1748,7 +1749,7 @@ body {
         box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
     }
 
-    .admission-panel button:hover {
+    .admission-panel button:active {
         background: linear-gradient(rgb(9, 118, 161), rgb(32, 181, 240));
     }
 

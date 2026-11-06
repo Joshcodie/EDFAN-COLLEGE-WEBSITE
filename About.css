@@ -538,7 +538,7 @@ main {
     margin-bottom: 12px;
     color: rgb(168, 3, 3);
     ;
-    border: 2px solid #ffffffe8;
+    border: 2px solid #56ddff;
     background-color: #ffffff6e;
     justify-self: center;
     border-radius: 25px;
@@ -592,54 +592,59 @@ main {
     outline-offset: -4px;
 }
 
+.value-card-cursor {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 46px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-19px, -3px);
+    transition: opacity 0.15s ease;
+}
+
+.value-card-cursor.is-visible,
+.value-card-cursor.is-guide {
+    opacity: 1;
+}
+
+.value-card-cursor.is-guide {
+    transition: left 0.45s ease, top 0.45s ease, opacity 0.15s ease;
+}
+
+.value-card-cursor svg {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.35)) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+}
+
+.value-card-cursor::before,
+.value-card-cursor::after {
+    position: absolute;
+    top: 8px;
+    left: 19px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    content: "";
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.35);
+    animation: value-card-cursor-ripple 1.8s ease-out infinite;
+}
+
+.value-card-cursor::after {
+    animation-delay: 0.9s;
+}
+
 @media (hover: hover) and (pointer: fine) {
     .value-card-button {
         cursor: none;
-    }
-
-    .value-card-cursor {
-        position: fixed;
-        z-index: 2000;
-        top: 0;
-        left: 0;
-        width: 38px;
-        height: 46px;
-        opacity: 0;
-        pointer-events: none;
-        transform: translate(-19px, -3px);
-        transition: opacity 0.15s ease;
-    }
-
-    .value-card-cursor.is-visible {
-        opacity: 1;
-    }
-
-    .value-card-cursor svg {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-        filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.35)) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
-    }
-
-    .value-card-cursor::before,
-    .value-card-cursor::after {
-        position: absolute;
-        top: 8px;
-        left: 19px;
-        width: 12px;
-        height: 12px;
-        border: 2px solid rgba(255, 255, 255, 0.9);
-        border-radius: 50%;
-        content: "";
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.35);
-        animation: value-card-cursor-ripple 1.8s ease-out infinite;
-    }
-
-    .value-card-cursor::after {
-        animation-delay: 0.9s;
     }
 }
 
@@ -705,6 +710,10 @@ main {
     .value-card-cursor::before,
     .value-card-cursor::after {
         animation: none;
+    }
+
+    .value-card-cursor.is-guide {
+        transition: none;
     }
 }
 
