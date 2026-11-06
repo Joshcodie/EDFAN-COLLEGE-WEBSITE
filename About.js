@@ -1,4 +1,5 @@
 const valueCardButtons = document.querySelectorAll('.value-card-button');
+const boardImage = document.querySelector('.board-image');
 
 function setValueCardFlipped(button, isFlipped) {
     const card = button.closest('.value-card');
@@ -29,6 +30,21 @@ valueCardButtons.forEach((button) => {
     });
 });
 
+if (boardImage) {
+    boardImage.addEventListener('click', () => {
+        const isFlipped = boardImage.getAttribute('aria-pressed') === 'true';
+
+        boardImage.classList.toggle('is-flipped', !isFlipped);
+        boardImage.setAttribute('aria-pressed', String(!isFlipped));
+        boardImage.setAttribute(
+            'aria-label',
+            `Show ${isFlipped ? 'school assembly' : 'students together'}`
+        );
+        boardImage.querySelector('.board-image-front').setAttribute('aria-hidden', String(!isFlipped));
+        boardImage.querySelector('.board-image-back').setAttribute('aria-hidden', String(isFlipped));
+    });
+}
+
 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     const cursor = document.createElement('div');
     cursor.className = 'value-card-cursor';
@@ -49,7 +65,7 @@ if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
         </svg>`;
     document.body.append(cursor);
 
-    valueCardButtons.forEach((button) => {
+    document.querySelectorAll('.value-card-button, .board-image').forEach((button) => {
         button.addEventListener('pointerenter', () => cursor.classList.add('is-visible'));
         button.addEventListener('pointermove', (event) => {
             cursor.style.left = `${event.clientX}px`;
