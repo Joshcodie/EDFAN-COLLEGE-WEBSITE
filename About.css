@@ -405,7 +405,7 @@ main {
     margin: 0 auto;
     padding: clamp(64px, 8vw, 70px);
     border-bottom: 1px solid #d3d3d3;
-    
+    position: relative;
 }
 
 .message-copy h1 {
