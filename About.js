@@ -31,9 +31,16 @@ function positionGuideCursor() {
         return;
     }
 
-    const bounds = valueCardButtons[guideCardIndex].getBoundingClientRect();
-    cursor.style.left = `${bounds.left + bounds.width / 2}px`;
-    cursor.style.top = `${bounds.top + bounds.height / 2}px`;
+    const boardBounds = boardImage?.getBoundingClientRect();
+    const boardIsVisible = boardBounds
+        && boardBounds.bottom > 0
+        && boardBounds.top < window.innerHeight;
+    const targetBounds = boardIsVisible
+        ? boardBounds
+        : valueCardButtons[guideCardIndex].getBoundingClientRect();
+
+    cursor.style.left = `${targetBounds.left + targetBounds.width / 2}px`;
+    cursor.style.top = `${targetBounds.top + targetBounds.height / 2}px`;
 }
 
 function updateCursorMode() {
@@ -120,5 +127,9 @@ if (boardImage) {
         );
         boardImage.querySelector('.board-image-front').setAttribute('aria-hidden', String(!isFlipped));
         boardImage.querySelector('.board-image-back').setAttribute('aria-hidden', String(isFlipped));
+
+        if (cursor && touchGuide.matches) {
+            positionGuideCursor();
+        }
     });
 }
