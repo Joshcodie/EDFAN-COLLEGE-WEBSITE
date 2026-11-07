@@ -539,7 +539,7 @@ main {
     color: rgb(255, 255, 255);
     ;
     border: 2px solid #7fe3fc;
-    background-color: #00000028;
+    background-color: #00000050;
     justify-self: center;
     border-radius: 25px;
     padding: 3px 11px;
@@ -871,19 +871,20 @@ main {
     padding: clamp(48px, 7vw, 76px) 22px;
     background: #86d3f1;
     text-align: center;
+    
 }
 
 .about-cta h2 {
     margin: 0 0 10px;
-    color: #172433;
+    color: #001330;
     font-size: clamp(28px, 4vw, 42px);
     font-weight: 600;
     letter-spacing: -0.03em;
 }
 
 .about-cta p {
-    margin: 0 0 24px;
-    color: #4c565f;
+    margin: 0 0 35px;
+    color: #171a1d;
     font-size: 15px;
 }
 
