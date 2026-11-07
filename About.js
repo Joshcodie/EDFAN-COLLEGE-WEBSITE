@@ -1,4 +1,6 @@
 const valueCardButtons = Array.from(document.querySelectorAll('.value-card-button'));
+const admissionStepButtons = Array.from(document.querySelectorAll('.admission-step'));
+const flipButtons = [...valueCardButtons, ...admissionStepButtons];
 const boardImage = document.querySelector('.board-image');
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
 const touchGuide = window.matchMedia('(max-width: 900px), (hover: none), (pointer: coarse)');
@@ -27,7 +29,7 @@ if (finePointer.matches || touchGuide.matches) {
 }
 
 function positionGuideCursor() {
-    if (!cursor || !valueCardButtons.length || !touchGuide.matches) {
+    if (!cursor || !flipButtons.length || !touchGuide.matches) {
         return;
     }
 
@@ -37,7 +39,7 @@ function positionGuideCursor() {
         && boardBounds.top < window.innerHeight;
     const targetBounds = boardIsVisible
         ? boardBounds
-        : valueCardButtons[guideCardIndex].getBoundingClientRect();
+        : flipButtons[guideCardIndex].getBoundingClientRect();
 
     cursor.style.left = `${targetBounds.left + targetBounds.width / 2}px`;
     cursor.style.top = `${targetBounds.top + targetBounds.height / 2}px`;
@@ -48,7 +50,7 @@ function updateCursorMode() {
         return;
     }
 
-    if (touchGuide.matches && valueCardButtons.length) {
+    if (touchGuide.matches && flipButtons.length) {
         cursor.classList.add('is-guide');
         positionGuideCursor();
         return;
@@ -65,7 +67,7 @@ if (cursor) {
     updateCursorMode();
     window.requestAnimationFrame(positionGuideCursor);
 
-    document.querySelectorAll('.value-card-button, .board-image').forEach((button) => {
+    document.querySelectorAll('.value-card-button, .admission-step, .board-image').forEach((button) => {
         button.addEventListener('pointerenter', () => {
             if (finePointer.matches && !touchGuide.matches) {
                 cursor.classList.add('is-visible');
@@ -109,7 +111,24 @@ valueCardButtons.forEach((button) => {
         setValueCardFlipped(button, !isFlipped);
 
         if (cursor && touchGuide.matches) {
-            guideCardIndex = (valueCardButtons.indexOf(button) + 1) % valueCardButtons.length;
+            guideCardIndex = (flipButtons.indexOf(button) + 1) % flipButtons.length;
+            positionGuideCursor();
+        }
+    });
+});
+
+admissionStepButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const isFlipped = button.getAttribute('aria-pressed') === 'true';
+        const nextFlipped = !isFlipped;
+
+        button.classList.toggle('is-flipped', nextFlipped);
+        button.setAttribute('aria-pressed', String(nextFlipped));
+        button.querySelector('.admission-step-front').setAttribute('aria-hidden', String(nextFlipped));
+        button.querySelector('.admission-step-back').setAttribute('aria-hidden', String(!nextFlipped));
+
+        if (cursor && touchGuide.matches) {
+            guideCardIndex = (flipButtons.indexOf(button) + 1) % flipButtons.length;
             positionGuideCursor();
         }
     });

@@ -358,12 +358,51 @@ header {
 }
 
 .admission-step {
+    display: block;
     min-width: 0;
     padding: 22px 18px;
     border: 1px solid #e6e9ec;
     border-radius: 12px;
-    background: #ffffff;
+    background: #0abeff31;
     box-shadow: 0 8px 24px rgba(23, 36, 51, 0.06);
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    perspective: 800px;
+}
+
+.admission-step:focus-visible {
+    outline: 3px solid #2d94e8;
+    outline-offset: 3px;
+}
+
+.admission-step-inner {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.admission-step.is-flipped .admission-step-inner {
+    transform: rotateY(180deg);
+}
+
+.admission-step-face {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.admission-step-back {
+   
+    
+    padding: 14px;
+    border-radius: 8px;
+    background: #0abeffc7;
+    transform: rotateY(180deg);
+   
 }
 
 .step-number-text {
@@ -376,9 +415,11 @@ header {
     color: #ffffff;
     background: #2d94e8;
     font-size: 23px;
+    justify-self: center;
 }
 
 .step-title-text {
+    display: block;
     margin: 0 0 10px;
     color: #000e1f;
     font-size: 17px;
@@ -386,9 +427,10 @@ header {
     font-weight: 900;
 }
 
-.step-description p {
+.step-description > span {
+    display: block;
     margin: 0;
-    color: #384049;
+    color: #ffffff;
     font-size: 14px;
     line-height: 1.7;
     font-weight: 500;
@@ -582,5 +624,88 @@ header {
         max-width: 280px;
         margin: 6px auto;
         box-sizing: border-box;
+    }
+}
+
+.value-card-cursor {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 46px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-19px, -3px);
+    transition: opacity 0.15s ease;
+}
+
+.value-card-cursor.is-visible,
+.value-card-cursor.is-guide {
+    opacity: 1;
+}
+
+.value-card-cursor.is-guide {
+    transition: left 0.45s ease, top 0.45s ease, opacity 0.15s ease;
+}
+
+.value-card-cursor svg {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.35)) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+}
+
+.value-card-cursor::before,
+.value-card-cursor::after {
+    position: absolute;
+    top: 8px;
+    left: 19px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    opacity: 0;
+    content: "";
+    transform: translate(-50%, -50%) scale(0.35);
+    animation: value-card-cursor-ripple 1.8s ease-out infinite;
+}
+
+.value-card-cursor::after {
+    animation-delay: 0.9s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .admission-step {
+        cursor: none;
+    }
+}
+
+@keyframes value-card-cursor-ripple {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(0.35);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .admission-step-inner {
+        transition: none;
+    }
+
+    .value-card-cursor::before,
+    .value-card-cursor::after {
+        animation: none;
+    }
+
+    .value-card-cursor.is-guide {
+        transition: none;
     }
 }
