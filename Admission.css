@@ -356,7 +356,7 @@ header {
 .steps-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 16px;
+    gap: 30px;
 }
 
 .admission-step {
