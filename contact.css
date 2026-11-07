@@ -14,6 +14,16 @@ a {
     font: inherit;
 }
 
+footer a {
+    display: inline-block;
+    transition: transform 180ms ease;
+}
+
+footer a:hover,
+footer a:focus-visible {
+    transform: translateX(3px);
+}
+
 header {
     margin: 0;
     padding: 0;

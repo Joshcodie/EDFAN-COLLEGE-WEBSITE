@@ -63,10 +63,12 @@ header {
 
 .phone-icon {
     position: relative;
-    top: 3px;
+    top: 0px;
     width: clamp(10px, 1.5vw, 17px);
     height: auto;
     fill: white;
+    padding-right: 4px;
+   
 }
 
 #apply-button {
@@ -360,16 +362,18 @@ header {
 .admission-step {
     display: block;
     min-width: 0;
-    padding: 22px 18px;
-    border: 1px solid #e6e9ec;
+    padding: 15px 10px;
+    border: 0.1px solid #e6e9ec;
     border-radius: 12px;
     background: #0abeff31;
-    box-shadow: 0 8px 24px rgba(23, 36, 51, 0.06);
+    box-shadow: 0 5px 12px rgba(27, 47, 71, 0.2);
     color: inherit;
     font: inherit;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     perspective: 800px;
+    height: 35vh;
+    
 }
 
 .admission-step:focus-visible {
@@ -400,7 +404,7 @@ header {
     
     padding: 14px;
     border-radius: 8px;
-    background: #0abeffc7;
+    background: #0184b4c7;
     transform: rotateY(180deg);
    
 }
@@ -416,12 +420,13 @@ header {
     background: #2d94e8;
     font-size: 23px;
     justify-self: center;
+    font-weight: 700;
 }
 
 .step-title-text {
     display: block;
     margin: 0 0 10px;
-    color: #000e1f;
+    color: #000914;
     font-size: 17px;
     line-height: 1.35;
     font-weight: 900;
@@ -442,7 +447,7 @@ header {
     padding: clamp(28px, 5vw, 48px);
     border: 1px solid #d2e3f1;
     border-radius: 14px;
-    background: #f1faff;
+    background: #0abeff31;
 }
 
 .documents-heading {
@@ -487,15 +492,18 @@ header {
 }
 
 .admissions-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: clamp(44px, 7vw, 72px) 22px;
     color: #ffffff;
-    background: #172433;
+    background: #86d3f1;
     text-align: center;
 }
 
 .admissions-contact h2 {
     margin: 0 0 12px;
-    color: #f7f5ef;
+    color: #001330;
     font-size: clamp(26px, 4vw, 38px);
     letter-spacing: -0.03em;
 }
@@ -503,7 +511,7 @@ header {
 .admissions-contact p {
     max-width: 600px;
     margin: 0 auto 24px;
-    color: #c5cbd0;
+    color: #001330;
     font-size: 15px;
     line-height: 1.7;
 }
@@ -515,30 +523,55 @@ header {
     min-height: 44px;
     margin: 6px;
     padding: 10px 18px;
-    border: 1px solid #e8872d;
+    
+    border: 0.5px solid rgb(175, 0, 0);
     border-radius: 999px;
     color: #ffffff;
-    background: #e8872d;
+    background: linear-gradient(145deg, #ee4949, #af2d2d);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: inset 0 1px 0px #ffffff59, inset 0 -2px 0 rgba(0, 0, 0, 0.3),
+            0 1px 2px rgba(0, 0, 0, 0.4),
+            0 8px 24px #5ba0f099;
+        transform: all 0.2s ease;
     transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
+ .admissions-action:active {
+        translate: 0 3px;
+        box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
+        background: linear-gradient(145deg, #df2828, #991c1c);
+    }
+
+    .admissions-action:hover {
+        transform: translateY(-2px);
+        color: white;
+        background: linear-gradient(145deg, #df2828, #991c1c);
+    }
+
 .admissions-contact-link {
-    color: #f7f5ef;
-    background: transparent;
+    color: white;
+    background: rgba(0, 0, 0, 0.664);
+    border-radius: 999px;
+    padding: 6px 12px;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    transition: background-color 180ms ease, color 180ms ease;
+    margin: 10px 0 0;
+    font-weight: 600;
 }
-
-.admissions-action:hover {
-    transform: translateY(-2px);
-}
-
 .admissions-contact-link:hover {
-    color: #172433;
-    background: #e8872d;
+    background: linear-gradient( #289cdfd3, #1c6199f1);
+    border: none;
 }
+
+.admissions-contact-link:active {
+    background: linear-gradient( #195688f1, #238fced3);
+    border: none;
+}
+
 
 @media (max-width: 1000px) {
     .steps-grid {
@@ -707,5 +740,90 @@ header {
 
     .value-card-cursor.is-guide {
         transition: none;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.5fr 1fr;
+    gap: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px max(24px, calc((100% - 1200px) / 2)) 24px;
+    align-items: start;
+    background-color: rgb(0, 0, 0);
+    color: #ffffffb0;
+}
+
+.footer-brand h3,
+.footer-links p,
+.footer-contact p:first-child,
+.footer-meta p {
+    margin-top: 0;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.footer-links p,
+.footer-contact p:first-child {
+    font-weight: 600;
+}
+
+.footer-links ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+    color: #cfcfcf;
+}
+
+.footer-links ul li::before {
+    content: "\203A";
+    margin-right: 8px;
+    color: #cfcfcf;
+    font-size: 1.1em;
+    line-height: 1;
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+footer a {
+    display: inline-block;
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: color 180ms ease, text-decoration-color 180ms ease, transform 180ms ease;
+}
+
+footer a:hover,
+footer a:focus-visible {
+    color: #50a8f0;
+    text-decoration: underline;
+    text-decoration-color: #3299ee;
+    text-underline-offset: 3px;
+    transform: translateX(3px);
+}
+
+.footer-links li:hover::before,
+.footer-links li:focus-within::before {
+    color: #8fd3a3;
+    transform: translateX(3px);
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding-top: 16px;
+    border-top: 0.5px solid #6d6d6d4f;
+    color: #cfcfcf;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    footer {
+        grid-template-columns: 1fr;
     }
 }

@@ -368,9 +368,10 @@ body {
     }
 
     footer a {
+        display: inline-block;
         color: #cfcfcf;
         text-decoration: none;
-        transition: color 180ms ease, text-decoration-color 180ms ease;
+        transition: color 180ms ease, text-decoration-color 180ms ease, transform 180ms ease;
     }
 
     .footer-links ul {
