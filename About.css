@@ -696,7 +696,7 @@ main {
 .value-card-back {
     transform: rotateY(180deg);
     color: #ffffff;
-    background: #00698f8c;
+    background: #00698fc7;
     font-size: 22px;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -704,7 +704,7 @@ main {
 
 @media (max-width: 600px) {
     .value-card-back {
-        font-size: 25px;
+        font-size: 35px;
     }
 }
 
