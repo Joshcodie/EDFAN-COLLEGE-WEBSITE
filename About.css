@@ -369,12 +369,7 @@ main {
     flex-wrap: balance;
 }
 
-@media (max-width: 600px) {
-.about-hero p { 
-font-size: 13px;
-font-weight: 500;
 
-}
 .about-tabs {
     display: flex;
     flex-wrap: wrap;
