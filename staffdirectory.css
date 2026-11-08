@@ -1,5 +1,6 @@
 * {
     font-family: 'poppins';
+    border: #000000 solid 1px;
 }
 
 body {
@@ -563,7 +564,7 @@ footer a:focus-visible {
 }
 
 .staff-team {
-    padding: clamp(56px, 8vw, 88px) max(24px, calc((100% - 1120px) / 2));
+    padding: clamp(26px, 3vw, 30px) max(24px, calc((100% - 1120px) / 2));
     background: #6bb0f534;
 }
 
@@ -600,9 +601,15 @@ footer a:focus-visible {
 
 .staff-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    padding: 0 max(24px, calc((100% - 1120px) / 2));
+    margin: 0;
 }
+
+.last-staff-grid {
+    margin-bottom: 40px;
+} 
 
 .staff-department-grid {
     margin-top: 56px;
@@ -614,7 +621,9 @@ footer a:focus-visible {
 }
 
 .staff-card {
-    
+    max-width: 250px;
+    width: 100%;
+    margin-inline: auto;
     min-width: 0;
     overflow: hidden;
     border: 1px solid #e6e9ec;
@@ -639,21 +648,22 @@ footer a:focus-visible {
 
 .staff-card-name {
     margin: 0 0 8px;
-    color: #172433;
+    color: #000c2e;
     font-size: 17px;
     line-height: 1.35;
+    font-weight: 900;
 }
 
 .staff-card-role {
     margin: 0 0 10px;
-    color: #e8872d;
+    color: rgb(221, 0, 0);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .staff-card-credentials {
     margin: 0;
-    color: #68737d;
+    color: #282e35;
     font-size: 13px;
     line-height: 1.6;
 }
@@ -676,13 +686,13 @@ footer a:focus-visible {
 .staff-cta {
     padding: clamp(48px, 7vw, 76px) 24px;
     color: #ffffff;
-    background: #172433;
+    background: #86d3f1;
     text-align: center;
 }
 
 .staff-cta-title {
     margin: 0 0 12px;
-    color: #f7f5ef;
+    color: #001330;
     font-size: clamp(28px, 4vw, 40px);
     letter-spacing: -0.03em;
 }
@@ -690,27 +700,39 @@ footer a:focus-visible {
 .staff-cta-copy {
     max-width: 620px;
     margin: 0 auto 24px;
-    color: #c5cbd0;
+    color: #1f2529;
     font-size: 16px;
     line-height: 1.7;
+    font-weight: 500;
 }
 
 .staff-cta-button {
-    min-height: 46px;
-    padding: 12px 22px;
-    border: 1px solid #e8872d;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: none;
     border-radius: 999px;
-    color: #ffffff;
-    background: #e8872d;
+    background: linear-gradient(rgb(32, 181, 240), rgb(9, 118, 161));
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1x;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0px #ffffff59, inset 0 -2px 0 rgba(0, 0, 0, 0.3),
+        0 1px 2px rgba(0, 0, 0, 0.4),
+        0 8px 24px #5ba0f099;
+    transform: all 0.2s ease;
     font-size: 14px;
     font-weight: 700;
-    cursor: pointer;
-    transition: background-color 180ms ease, transform 180ms ease;
 }
 
 .staff-cta-button:hover {
+    background: linear-gradient(rgb(67, 197, 248), rgb(5, 124, 172));
     transform: translateY(-2px);
-    background: #d9771d;
+}
+
+.staff-cta-button:active {
+    translate: 0 3px;
+    box-shadow: inset 0 2px 4px, rgba(0, 0, 0, 0.4);
+    background: linear-gradient(rgb(9, 118, 161), rgb(32, 181, 240));
 }
 
 @media (max-width: 1000px) {
