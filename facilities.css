@@ -450,19 +450,23 @@ footer a:focus-visible {
 }
 
 .facilities-hero-title {
+    max-width: 680px;
     margin: 0;
     color: #f7f5ef;
-    font-size: clamp(40px, 6vw, 68px);
+    font-size: clamp(38px, 6vw, 55px);
+    font-weight: 700;
     letter-spacing: -0.04em;
-    line-height: 1.08;
+    line-height: 1.1;
+    text-wrap: balance;
 }
 
 .facilities-hero-copy {
-    max-width: 680px;
-    margin: 22px 0 0;
+     max-width: 400px;
+    margin: 24px 0 0;
     color: #c5cbd0;
-    font-size: clamp(16px, 1.8vw, 19px);
-    line-height: 1.7;
+    font-size: clamp(12px, 1.8vw, 14px);
+    line-height: 1.75;
+    text-wrap: pretty;
 }
 
 .facility-section {
@@ -477,7 +481,7 @@ footer a:focus-visible {
     border: 1px solid #e6e9ec;
     border-radius: 14px;
     background: #ffffff;
-    box-shadow: 0 10px 28px rgba(23, 36, 51, 0.07);
+    box-shadow: 0 10px 28px rgba(16, 128, 255, 0.171);
 }
 
 .facility-layout {

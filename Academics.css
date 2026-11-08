@@ -316,26 +316,30 @@ header {
 .academic-stage-label {
     margin: 0 0 16px;
     color: #c00101;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 900;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
 
 .academic-hero-title {
+    max-width: 680px;
     margin: 0;
     color: #f7f5ef;
-    font-size: clamp(40px, 6vw, 68px);
+    font-size: clamp(38px, 6vw, 55px);
+    font-weight: 700;
     letter-spacing: -0.04em;
-    line-height: 1.08;
+    line-height: 1.1;
+    text-wrap: balance;
 }
 
 .academic-hero-copy {
-    max-width: 680px;
-    margin: 22px 0 0;
-    color: #e0e4e7;
-    font-size: clamp(16px, 1.8vw, 19px);
-    line-height: 1.7;
+    max-width: 400px;
+    margin: 24px 0 0;
+    color: #c5cbd0;
+    font-size: clamp(12px, 1.8vw, 14px);
+    line-height: 1.75;
+    text-wrap: pretty;
 }
 
 .academic-benefits {
@@ -345,8 +349,7 @@ header {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
     width: min(100% - 48px, 1120px);
-    margin: -38px auto 0;
-}
+    margin: -38px auto 0;}
 
 .academic-benefit {
     min-width: 0;
@@ -354,19 +357,24 @@ header {
     border: 1px solid #e6e9ec;
     border-radius: 12px;
     background: #ffffff;
-    box-shadow: 0 10px 28px rgba(23, 36, 51, 0.08);
+    box-shadow: 0 8px 24px rgba(16, 128, 255, 0.246);
+}
+
+.first-academic-stage-label {
+    color: #002041;
+    font-weight: 900;
 }
 
 .academic-benefit-title {
     margin: 0 0 10px;
-    color: #172433;
+    color: #000a14;
     font-size: 17px;
     line-height: 1.35;
 }
 
 .academic-benefit-copy {
     margin: 0;
-    color: #5b6670;
+    color: #1e2329;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -386,7 +394,7 @@ header {
 .academic-stage-title {
     margin: 0;
     color: #000a14;
-    font-size: clamp(32px, 4vw, 46px);
+    font-size: clamp(32px, 4vw, 40px);
     letter-spacing: -0.035em;
     line-height: 1.15;
 }
@@ -394,8 +402,8 @@ header {
 .academic-stage-copy {
     max-width: 720px;
     margin: 16px 0 0;
-    color: #293641;
-    font-size: 16px;
+    color: #13191f;
+    font-size: 14px;
     line-height: 1.75;
 }
 
@@ -407,12 +415,20 @@ header {
 
 .academic-subject {
     padding: 10px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     color: #f7f5ef;
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(1, 97, 175, 0.986);
     font-size: 14px;
     line-height: 1.4;
+    font-weight: 700;
+}
+
+.academic-subject {
+    box-shadow: 0 2px 10px gray;
+}
+
+.academic-subject:hover {
+    border: 2px solid rgba(255, 255, 255, 0.945);
 }
 
 .academic-senior {
@@ -421,11 +437,11 @@ header {
 }
 
 .academic-senior-title {
-    color: #172433;
+    color: #000a14;
 }
 
 .academic-senior-copy {
-    color: #5b6670;
+    color: #13191f;
 }
 
 .academic-pathways {
@@ -443,6 +459,10 @@ header {
     box-shadow: 0 8px 24px rgba(23, 36, 51, 0.05);
 }
 
+.academic-pathway:hover {
+    border: 2px solid rgba(243, 1, 1, 0.945);
+}
+
 .academic-pathway-title {
     margin: 0 0 14px;
     color: #172433;
@@ -454,10 +474,11 @@ header {
     gap: 9px;
     margin: 0;
     padding: 0;
-    color: #5b6670;
+    color: #000a14;
     font-size: 14px;
     line-height: 1.5;
     list-style: none;
+    font-weight: 600;
 }
 
 .academic-subject-item {

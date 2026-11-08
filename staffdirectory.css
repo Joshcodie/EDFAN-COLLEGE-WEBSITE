@@ -1,6 +1,5 @@
 * {
     font-family: 'poppins';
-    border: #000000 solid 1px;
 }
 
 body {
@@ -509,7 +508,7 @@ footer a:focus-visible {
     border: 1px solid #e6e9ec;
     border-radius: 14px;
     background: white;
-    box-shadow: 0 10px 30px rgba(23, 36, 51, 0.2);
+    box-shadow: 0 10px 30px rgba(16, 128, 255, 0.20);
 }
 
 .staff-leader-image {
@@ -602,7 +601,7 @@ footer a:focus-visible {
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 15px;
+    gap: 40px;
     padding: 0 max(24px, calc((100% - 1120px) / 2));
     margin: 0;
 }
@@ -629,8 +628,13 @@ footer a:focus-visible {
     border: 1px solid #e6e9ec;
     border-radius: 12px;
     background: #ffffff;
-    box-shadow: 0 8px 24px rgba(23, 36, 51, 0.06);
+    box-shadow: 0 8px 24px rgba(16, 128, 255, 0.246); 
     transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.first-staff-card{
+    box-shadow: 0 8px 20px rgb(189, 187, 187);
+    border: none;
 }
 
 .staff-card:hover {
