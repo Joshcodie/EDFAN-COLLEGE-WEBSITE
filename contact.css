@@ -733,13 +733,21 @@ header {
 }
 
 .hero-shadow {
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.788);
+    text-shadow: 0 1.5Px 3px rgba(0, 0, 0, 0.788);
     justify-self: flex-start;
 }
 
 .hero-copy-shadow {
     text-shadow: 0 1px 1px rgb(0, 0, 0);
     justify-self: flex-start;
+    line-height: 5px;
+}
+
+.hero-shadow-eyebrow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.986);
+    justify-self: flex-start;
+    font-weight: 900;
+    
 }
 
 .contact-hero-content {
@@ -750,8 +758,7 @@ header {
 .contact-eyebrow {
     margin: 0 0 14px;
     color: #ffffff;
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 14px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
@@ -772,7 +779,7 @@ header {
     margin: 24px 0 0;
     color: #ffffff;
     font-size: clamp(12px, 1.8vw, 15px);
-    line-height: 1.75;
+    line-height: 1.8;
     text-wrap: pretty;
 }
 
@@ -851,7 +858,7 @@ header {
 .contact-input:focus,
 .contact-message:focus {
     border: 2px solid #1096d4;
-    outline: 3px solid rgba(45, 158, 196, 0.178);
+    outline: 3px solid rgba(45, 158, 196, 0.089);
 
 }
 
@@ -910,24 +917,26 @@ header {
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 24px rgba(16, 128, 255, 0.246);
+    margin-top: 30px;
 }
 
 .contact-card-title {
     margin: 0 0 12px;
-    color: #172433;
+    color: #001022;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .contact-card-copy {
     margin: 0 0 10px;
-    color: #5b6670;
+    color: #1c2024;
     font-size: 14px;
     line-height: 1.65;
     overflow-wrap: anywhere;
 }
 
 .contact-card-link {
-    color: #c83d4b;
+    color: #92000f;
     text-decoration: none;
 }
 
