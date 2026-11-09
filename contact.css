@@ -729,7 +729,17 @@ body {
     padding: clamp(56px, 8vw, 88px) max(24px, calc((100% - 1120px) / 2));
     box-sizing: border-box;
     color: #ffffff;
-    background: #2d9fc4;
+    background: linear-gradient(150deg, #0382d6, #42c3ee);
+}
+
+.hero-shadow{
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.788);
+     justify-self: flex-start;
+}
+
+.hero-copy-shadow {
+     text-shadow: 0 1px 1px rgb(0, 0, 0);
+     justify-self: flex-start;
 }
 
 .contact-hero-content {
@@ -760,8 +770,8 @@ body {
 .contact-hero-copy {
     max-width: 400px;
     margin: 24px 0 0;
-    color: #c5cbd0;
-    font-size: clamp(12px, 1.8vw, 14px);
+    color: #ffffff;
+    font-size: clamp(12px, 1.8vw, 15px);
     line-height: 1.75;
     text-wrap: pretty;
 }
@@ -774,7 +784,7 @@ body {
 .contact-form-intro {
     max-width: 720px;
     margin: 0 auto 22px;
-    color: #5b6670;
+    color: #242a30;
     font-size: 15px;
     line-height: 1.7;
     text-align: center;
@@ -840,8 +850,9 @@ body {
 
 .contact-input:focus,
 .contact-message:focus {
-    border-color: #2d9fc4;
-    outline: 3px solid rgba(45, 159, 196, 0.16);
+    border: 2px solid #1096d4;
+    outline: 3px solid rgba(45, 158, 196, 0.178);
+
 }
 
 .contact-message {
@@ -856,11 +867,16 @@ body {
     border: 0;
     border-radius: 999px;
     color: #ffffff;
-    background: #c83d4b;
+    background: linear-gradient(150deg, #0382d6, #42c3ee);
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.contact-map-button {
+    position: relative;
+    top: -90px;
 }
 
 .contact-submit {
@@ -870,7 +886,12 @@ body {
 .contact-submit:hover,
 .contact-map-button:hover {
     transform: translateY(-2px);
-    background: #a92e3b;
+}
+
+.contact-submit:active,
+.contact-map-button:active {
+    transform: translateY(2px);
+   background: linear-gradient(180deg, #34b2db, #0372bd);
 }
 
 .contact-details {
